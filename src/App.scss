@@ -1,0 +1,113 @@
+@import "./uiSystem.scss";
+
+body {
+  display: flex;
+  align-items: flex-start;
+  background-color: $grey100;
+  border: 2px solid black;
+  font: {
+    family: "Poppins Light";
+    size: $m;
+  }
+  width: 1500px;
+}
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: $xh;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: baseline;
+  font: {
+    size: $xl;
+  }
+  ul {
+    text: {
+      transform: capitalize;
+    }
+    a {
+      text: {
+        decoration: none;
+      }
+    }
+    display: flex;
+    column-gap: $h;
+    list-style-type: none;
+    li {
+      &:last-of-type,
+      &:nth-of-type(2) {
+        min-width: 12ch;
+      }
+    }
+    details {
+      summary {
+        cursor: pointer;
+        &::before {
+          content: "+";
+          padding: {
+            right: $xxs;
+          }
+        }
+      }
+      &[open] {
+        summary {
+          &::before {
+            content: "-";
+            padding: {
+              right: $xxs;
+            }
+          }
+        }
+      }
+      summary {
+        list-style-type: none;
+      }
+      ul {
+        flex-flow: column;
+        row-gap: $xxs;
+      }
+    }
+  }
+}
+
+h2 {
+  font: {
+    family: "Poppins Medium";
+    size: $h;
+  }
+  text: {
+    transform: capitalize;
+  }
+  color: $grey800;
+}
+
+.active {
+  color: $green700;
+}
+.pending {
+  color: $grey700;
+}
+
+.btn {
+  padding: $xxs $xxxl;
+  border: 2px solid $green900;
+  border-radius: $xxs;
+  height: $h;
+
+  text: {
+    decoration: none;
+    transform: capitalize;
+  }
+  background-color: $green900;
+  color: $grey100;
+}
+/* Responsiveness */
+@import "./tablet.scss";
+@import "./mobile.scss";
