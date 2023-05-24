@@ -1,9 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/img/logo.webp";
 export const Nav = () => {
   return (
     <nav>
-      <img src="" alt="Broughty Ferry Community Logo" />
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        }>
+        <img src={logo} alt="Broughty Ferry Community Logo" />
+      </NavLink>
+
       <ul>
         <li>
           <NavLink
@@ -40,7 +48,6 @@ export const Nav = () => {
           </details>
         </li>
         <li>
-          {" "}
           <NavLink
             to="/news"
             className={({ isActive, isPending }) =>
@@ -63,9 +70,7 @@ export const Nav = () => {
       </ul>
       <NavLink
         to="/contact"
-        className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "btn" : "btn"
-        }>
+        className='btn primaryBtn'>
         contact
       </NavLink>
     </nav>

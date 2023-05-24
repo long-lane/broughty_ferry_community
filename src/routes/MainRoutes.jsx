@@ -6,11 +6,13 @@ import { FindUs } from "../components/FindUs";
 import { Nav } from "../components/Nav";
 import { FerryChats } from "../components/FerryChats";
 import { YouthGaff } from "../components/YouthGaff";
+import { Hero } from "../components/Hero";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
       <header>
         <Nav />
+        <Hero />
       </header>
       <main>
         <Routes>

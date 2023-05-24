@@ -10,6 +10,7 @@ body {
     size: $m;
   }
   width: 1500px;
+  color: $grey800;
 }
 #root,
 .App {
@@ -19,6 +20,10 @@ body {
 
 header {
   padding: $xh;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 650px;
+  justify-content: space-between;
 }
 nav {
   display: flex;
@@ -28,6 +33,12 @@ nav {
   font: {
     size: $xl;
   }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
   ul {
     text: {
       transform: capitalize;
@@ -35,6 +46,9 @@ nav {
     a {
       text: {
         decoration: none;
+      }
+      &:hover {
+        color: $green700;
       }
     }
     display: flex;
@@ -48,9 +62,13 @@ nav {
     }
     details {
       summary {
+        list-style-type: none;
         cursor: pointer;
+        &:hover {
+          color: $green700;
+        }
         &::before {
-          content: "+";
+          content: "\002b";
           padding: {
             right: $xxs;
           }
@@ -59,24 +77,107 @@ nav {
       &[open] {
         summary {
           &::before {
-            content: "-";
-            padding: {
-              right: $xxs;
-            }
+            content: "\2212";
           }
         }
       }
-      summary {
-        list-style-type: none;
-      }
+
       ul {
         flex-flow: column;
         row-gap: $xxs;
+        padding: {
+          top: $xxs;
+        }
+
+        li {
+          padding: {
+            left: $m;
+          }
+        }
       }
     }
   }
 }
 
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+  article {
+    flex: 1 0 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: $m;
+    &:first-of-type {
+      span {
+        font: {
+          size: $xxl;
+          family: "Poppins Medium";
+        }
+        &::first-letter {
+          text: {
+            transform: capitalize;
+          }
+        }
+        color: $green600;
+      }
+      p {
+        font: {
+          size: $xl;
+        }
+        &:first-letter {
+          text: {
+            transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+.subscription {
+  display:flex;
+  input {
+    height: $h;
+
+    &[type="email"] {
+      width: 250px;
+      background-color: transparent;
+      border: 2px solid $grey500;
+      border-right: none;
+      border: {
+        top-left-radius: $xxs;
+        bottom-left-radius: $xxs;
+      }
+    }
+    &[type="submit"] {
+      cursor: pointer;
+      width: 120px;
+      border: 2px solid $green700;
+      background-color: $green700;
+      border: {
+        top-right-radius: $xxs;
+        bottom-right-radius: $xxs;
+      }
+      color: $grey100;
+      font:{
+        family: 'Poppins Light';
+        size:$m;
+      }
+    }
+  }
+}
+
+h1 {
+  font: {
+    size: $h;
+    family: "Poppins Bold";
+  }
+  &:first-letter {
+    text: {
+      transform: capitalize;
+    }
+  }
+  color: $grey900;
+}
 h2 {
   font: {
     family: "Poppins Medium";
@@ -90,6 +191,13 @@ h2 {
 
 .active {
   color: $green700;
+  font: {
+    family: "Poppins Bold";
+  }
+}
+
+.inactive {
+  color: $grey900;
 }
 .pending {
   color: $grey700;
@@ -100,12 +208,14 @@ h2 {
   border: 2px solid $green900;
   border-radius: $xxs;
   height: $h;
-
   text: {
     decoration: none;
     transform: capitalize;
   }
-  background-color: $green900;
+}
+
+.primaryBtn {
+  background-color: $green700;
   color: $grey100;
 }
 /* Responsiveness */
