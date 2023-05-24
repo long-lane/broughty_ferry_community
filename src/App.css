@@ -48,7 +48,7 @@ header {
   padding: 60px;
   display: flex;
   flex-flow: column nowrap;
-  min-height: 650px;
+  min-height: 850px;
   justify-content: space-between; }
 
 nav {
@@ -95,7 +95,7 @@ nav {
     flex: 1 0 50%;
     display: flex;
     flex-flow: column nowrap;
-    row-gap: 16px; }
+    row-gap: 18px; }
     .hero article:first-of-type span {
       font-size: 30px;
       font-family: "Poppins Medium";
@@ -106,13 +106,18 @@ nav {
       font-size: 20px; }
       .hero article:first-of-type p:first-letter {
         text-transform: capitalize; }
+    .hero article:last-of-type {
+      justify-content: center;
+      align-items: center; }
+      .hero article:last-of-type img {
+        width: 550px; }
 
 .subscription {
   display: flex; }
   .subscription input {
-    height: 48px; }
+    height: 60px; }
     .subscription input[type="email"] {
-      width: 250px;
+      width: 300px;
       background-color: transparent;
       border: 2px solid #adb5bd;
       border-right: none;
@@ -120,14 +125,14 @@ nav {
       border-bottom-left-radius: 7px; }
     .subscription input[type="submit"] {
       cursor: pointer;
-      width: 120px;
+      width: 180px;
       border: 2px solid #44a66a;
       background-color: #44a66a;
       border-top-right-radius: 7px;
       border-bottom-right-radius: 7px;
       color: #f8f9fa;
-      font-family: 'Poppins Light';
-      font-size: 16px; }
+      font-family: "Poppins Light";
+      font-size: 18px; }
 
 h1 {
   font-size: 48px;

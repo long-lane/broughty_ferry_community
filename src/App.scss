@@ -22,7 +22,7 @@ header {
   padding: $xh;
   display: flex;
   flex-flow: column nowrap;
-  min-height: 650px;
+  min-height: 850px;
   justify-content: space-between;
 }
 nav {
@@ -106,7 +106,7 @@ nav {
     flex: 1 0 50%;
     display: flex;
     flex-flow: column nowrap;
-    row-gap: $m;
+    row-gap: $l;
     &:first-of-type {
       span {
         font: {
@@ -131,15 +131,22 @@ nav {
         }
       }
     }
+    &:last-of-type {
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 550px;
+      }
+    }
   }
 }
 .subscription {
-  display:flex;
+  display: flex;
   input {
-    height: $h;
+    height: $xh;
 
     &[type="email"] {
-      width: 250px;
+      width: 300px;
       background-color: transparent;
       border: 2px solid $grey500;
       border-right: none;
@@ -150,7 +157,7 @@ nav {
     }
     &[type="submit"] {
       cursor: pointer;
-      width: 120px;
+      width: 180px;
       border: 2px solid $green700;
       background-color: $green700;
       border: {
@@ -158,9 +165,9 @@ nav {
         bottom-right-radius: $xxs;
       }
       color: $grey100;
-      font:{
-        family: 'Poppins Light';
-        size:$m;
+      font: {
+        family: "Poppins Light";
+        size: $l;
       }
     }
   }
