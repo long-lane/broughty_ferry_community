@@ -1,0 +1,25 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    row-gap: $h;
+  }
+  .hero {
+    row-gap: $xh;
+  }
+  nav {
+    ul {
+      flex-flow: column wrap;
+    }
+  }
+  .whoWeAre {
+    flex-flow: column-reverse wrap;
+    row-gap: $xh;
+    article {
+      &:first-of-type {
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  
+}
