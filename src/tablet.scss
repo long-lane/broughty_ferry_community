@@ -7,7 +7,19 @@
   }
   nav {
     ul {
-      display: none;
+      flex-flow: column wrap;
     }
   }
+  .whoWeAre {
+    flex-flow: column-reverse wrap;
+    row-gap: $xh;
+    article {
+      &:first-of-type {
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  
 }

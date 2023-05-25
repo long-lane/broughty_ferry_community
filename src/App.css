@@ -35,7 +35,7 @@ body {
   background-color: #f8f9fa;
   border: 2px solid black;
   font-family: "Poppins Light";
-  font-size: 16px;
+  font-size: 20px;
   width: 1500px;
   color: #343a40; }
 
@@ -117,7 +117,7 @@ nav {
     .hero article:last-of-type {
       justify-content: center;
       align-items: center;
-      background: url("./assets/img/hero_bkg.webp");
+      background-image: url("./assets/img/hero_bkg.webp");
       background-repeat: no-repeat;
       background-size: cover; }
       .hero article:last-of-type img {
@@ -147,6 +147,45 @@ nav {
       border-top-right-radius: 7px;
       border-bottom-right-radius: 7px;
       color: #f8f9fa; }
+      .subscription input[type="submit"]:hover {
+        opacity: 0.9; }
+
+.whoWeAre {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 48px; }
+  .whoWeAre article {
+    display: flex;
+    flex: 1 1 40%; }
+    .whoWeAre article:first-of-type {
+      justify-content: center;
+      background-image: url("./assets/img/who_we_are_bkg.svg");
+      background-repeat: no-repeat; }
+      .whoWeAre article:first-of-type img {
+        width: 350px; }
+    .whoWeAre article:last-of-type {
+      flex-flow: column wrap; }
+
+.youthGaff,
+.ferryChats {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 48px; }
+  .youthGaff article,
+  .ferryChats article {
+    flex: 1 0 40%;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 16px; }
+    .youthGaff article:first-of-type address,
+    .ferryChats article:first-of-type address {
+      display: inline-flex; }
+    .youthGaff article:last-of-type,
+    .ferryChats article:last-of-type {
+      justify-content: flex-end; }
+      .youthGaff article:last-of-type img,
+      .ferryChats article:last-of-type img {
+        width: 100%; }
 
 h1 {
   font-size: 48px;
@@ -161,6 +200,12 @@ h2 {
   text-transform: capitalize;
   color: #343a40; }
 
+h3 {
+  font-family: "Poppins Medium";
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #f47a4e; }
+
 .active {
   color: #44a66a;
   font-family: "Poppins Bold"; }
@@ -173,7 +218,7 @@ h2 {
 
 .btn {
   padding: 7px 36px;
-  border: 2px solid #159045;
+  border: 2px solid #44a66a;
   border-radius: 7px;
   height: 48px;
   text-decoration: none;
@@ -182,6 +227,8 @@ h2 {
 .primaryBtn {
   background-color: #44a66a;
   color: #f8f9fa; }
+  .primaryBtn:hover {
+    opacity: 0.9; }
 
 /* Responsiveness */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -192,12 +239,25 @@ h2 {
     row-gap: 60px; }
 
   nav ul {
-    display: none; } }
+    flex-flow: column wrap; }
+
+  .whoWeAre {
+    flex-flow: column-reverse wrap;
+    row-gap: 60px; }
+    .whoWeAre article:first-of-type img {
+      width: 250px; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   header {
-    row-gap: 48px; }
+    row-gap: 48px;
+    padding: 16px; }
+
+  main {
+    padding: 16px; }
 
   h1 {
+    font-size: 30px; }
+
+  h2 {
     font-size: 30px; }
 
   .hero {
@@ -223,6 +283,12 @@ h2 {
     .subscription input[type="submit"] {
       border: 2px solid #44a66a;
       border-radius: 7px;
+      width: 250px; }
+
+  .whoWeAre {
+    flex-flow: column-reverse wrap;
+    row-gap: 60px; }
+    .whoWeAre article:first-of-type img {
       width: 250px; } }
 
 /*# sourceMappingURL=App.css.map */

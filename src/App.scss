@@ -7,7 +7,7 @@ body {
   border: 2px solid black;
   font: {
     family: "Poppins Light";
-    size: $m;
+    size: $xl;
   }
   width: 1500px;
   color: $grey800;
@@ -31,7 +31,6 @@ main {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-
 }
 nav {
   display: flex;
@@ -144,14 +143,15 @@ nav {
     &:last-of-type {
       justify-content: center;
       align-items: center;
-      background: url('./assets/img/hero_bkg.webp');
-      
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: {
+        image: url("./assets/img/hero_bkg.webp");
+        repeat: no-repeat;
+        size: cover;
+      }
       img {
         filter: brightness(1.4);
         width: 350px;
-        object-fit: cover ;
+        object-fit: cover;
       }
     }
   }
@@ -168,7 +168,6 @@ nav {
       size: $l;
     }
     &[type="email"] {
-      
       background-color: transparent;
       border: 2px solid $grey500;
       border-right: none;
@@ -188,11 +187,62 @@ nav {
         bottom-right-radius: $xxs;
       }
       color: $grey100;
-  
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 }
 
+.whoWeAre {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: $h;
+  article {
+    display: flex;
+    flex: 1 1 40%;
+
+    &:first-of-type {
+      justify-content: center;
+      background: {
+        image: url("./assets/img/who_we_are_bkg.svg");
+        repeat: no-repeat;
+        // size: cover;
+      }
+      img {
+        width: 350px;
+      }
+    }
+    &:last-of-type {
+      flex-flow: column wrap;
+    }
+  }
+}
+
+.youthGaff,
+.ferryChats {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: $h;
+  article {
+    flex: 1 0 40%;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: $m;
+    &:first-of-type{
+      address{
+        display: inline-flex;
+      }
+    }
+    &:last-of-type {
+      justify-content: flex-end;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 h1 {
   font: {
     size: $h;
@@ -215,6 +265,16 @@ h2 {
   }
   color: $grey800;
 }
+h3 {
+  font: {
+    family: "Poppins Medium";
+    size: $xxl;
+  }
+  text: {
+    transform: capitalize;
+  }
+  color: $orange700;
+}
 
 .active {
   color: $green700;
@@ -232,7 +292,7 @@ h2 {
 
 .btn {
   padding: $xxs $xxxl;
-  border: 2px solid $green900;
+  border: 2px solid $green700;
   border-radius: $xxs;
   height: $h;
   text: {
@@ -244,6 +304,9 @@ h2 {
 .primaryBtn {
   background-color: $green700;
   color: $grey100;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 /* Responsiveness */
 @import "./tablet.scss";

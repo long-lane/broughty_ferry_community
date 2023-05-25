@@ -1,8 +1,17 @@
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
-    header{
-        row-gap: $h;
-    }
+  header {
+    row-gap: $h;
+    padding: $m;
+  }
+  main {
+    padding: $m;
+  }
   h1 {
+    font: {
+      size: $xxl;
+    }
+  }
+  h2 {
     font: {
       size: $xxl;
     }
@@ -25,7 +34,7 @@
       display: none;
     }
   }
-  
+
   .subscription {
     flex-flow: column wrap;
     align-items: center;
@@ -40,6 +49,17 @@
         border: 2px solid $green700;
         border-radius: $xxs;
         width: 250px;
+      }
+    }
+  }
+  .whoWeAre {
+    flex-flow: column-reverse wrap;
+    row-gap: $xh;
+    article {
+      &:first-of-type {
+        img {
+          width: 250px;
+        }
       }
     }
   }
