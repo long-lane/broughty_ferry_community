@@ -1,6 +1,6 @@
 import React from "react";
 import whoWeAre from "../assets/img/who_we_are.webp";
-
+import { NavLink } from "react-router-dom";
 export const WhoWeAre = () => {
   return (
     <section className="whoWeAre">
@@ -17,6 +17,7 @@ export const WhoWeAre = () => {
           then a Management Group. We are at the stage of applying for charity
           registration.
         </p>
+        <NavLink className='btn secondaryBtn' to="/get-involved">get involved</NavLink>
       </article>
     </section>
   );

@@ -215,6 +215,8 @@ nav {
     }
     &:last-of-type {
       flex-flow: column wrap;
+      row-gap: $l;
+      align-items: flex-start;
     }
   }
 }
@@ -299,6 +301,9 @@ h3 {
     decoration: none;
     transform: capitalize;
   }
+  font:{
+    size: $l;
+  }
 }
 
 .primaryBtn {
@@ -307,6 +312,15 @@ h3 {
   &:hover {
     opacity: 0.9;
   }
+}
+.secondaryBtn {
+  // background-color: $green700;
+  color: $green700;
+  &:hover {
+    opacity: 0.9;
+    filter: hue-rotate(227deg)
+  }
+  
 }
 /* Responsiveness */
 @import "./tablet.scss";

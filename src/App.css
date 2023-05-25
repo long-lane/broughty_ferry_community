@@ -164,7 +164,9 @@ nav {
       .whoWeAre article:first-of-type img {
         width: 350px; }
     .whoWeAre article:last-of-type {
-      flex-flow: column wrap; }
+      flex-flow: column wrap;
+      row-gap: 18px;
+      align-items: flex-start; }
 
 .youthGaff,
 .ferryChats {
@@ -222,13 +224,20 @@ h3 {
   border-radius: 7px;
   height: 48px;
   text-decoration: none;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-size: 18px; }
 
 .primaryBtn {
   background-color: #44a66a;
   color: #f8f9fa; }
   .primaryBtn:hover {
     opacity: 0.9; }
+
+.secondaryBtn {
+  color: #44a66a; }
+  .secondaryBtn:hover {
+    opacity: 0.9;
+    filter: hue-rotate(227deg); }
 
 /* Responsiveness */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
