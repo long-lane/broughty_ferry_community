@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+
 import logo from "../assets/img/logo.webp";
 export const Nav = () => {
   return (
@@ -14,13 +16,9 @@ export const Nav = () => {
 
       <ul>
         <li>
-          <NavLink
-            to="/who-we-are"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
+        <NavHashLink to="/who-we-are#who-we-are" activeClassName="active">
             who we are
-          </NavLink>
+          </NavHashLink>
         </li>
         <li>
           <details>
@@ -48,23 +46,15 @@ export const Nav = () => {
           </details>
         </li>
         <li>
-          <NavLink
-            to="/news"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
+        <NavHashLink to="/news#news" activeClassName="active">
             news
-          </NavLink>
+          </NavHashLink>
         </li>
 
         <li>
-          <NavLink
-            to="/get-involved"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : "inactive"
-            }>
+          <NavHashLink to="/get-involved#get-involved" activeClassName="active">
             get involved
-          </NavLink>
+          </NavHashLink>
         </li>
       </ul>
       <NavLink to="/contact" className="btn primaryBtn">

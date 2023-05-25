@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const News = () => {
   return (
-    <section>
-    <h2>news</h2>
-  </section>
-  )
-}
+    <section id="news">
+      <h2>news</h2>
+    </section>
+  );
+};
