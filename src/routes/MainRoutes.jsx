@@ -22,8 +22,7 @@ export const MainRoutes = () => {
           <Route path="/what-we-do/youth-gaff" element={<YouthGaff/>} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/news" element={<News />} />
-          <Route path="/find-us" element={<FindUs />} />
-          <Route path="*" to='/' />
+          <Route path="/find-us" element={<FindUs />} />          
         </Routes>
       </main>
       <footer>
