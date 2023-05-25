@@ -245,7 +245,12 @@ h3 {
     flex-flow: column-reverse wrap;
     row-gap: 60px; }
     .whoWeAre article:first-of-type img {
-      width: 250px; } }
+      width: 250px; }
+
+  .youthGaff,
+  .ferryChats {
+    flex-flow: column wrap;
+    row-gap: 16px; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   header {
     row-gap: 48px;
