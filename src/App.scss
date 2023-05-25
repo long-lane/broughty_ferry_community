@@ -25,6 +25,14 @@ header {
   min-height: 850px;
   justify-content: space-between;
 }
+
+main {
+  padding: $xh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+}
 nav {
   display: flex;
   flex-flow: row nowrap;
@@ -102,8 +110,9 @@ nav {
 .hero {
   display: flex;
   flex-flow: row wrap;
+  column-gap: $h;
   article {
-    flex: 1 0 50%;
+    flex: 1 1 40%;
     display: flex;
     flex-flow: column nowrap;
     row-gap: $l;
@@ -129,24 +138,37 @@ nav {
             transform: capitalize;
           }
         }
+        max-width: 45ch;
       }
     }
     &:last-of-type {
       justify-content: center;
       align-items: center;
+      background: url('./assets/img/hero_bkg.webp');
+      
+      background-repeat: no-repeat;
+      background-size: cover;
       img {
-        width: 550px;
+        filter: brightness(1.4);
+        width: 350px;
+        object-fit: cover ;
       }
     }
   }
 }
 .subscription {
+  margin: {
+    top: $h;
+  }
   display: flex;
   input {
     height: $xh;
-
+    font: {
+      family: "Poppins Light";
+      size: $l;
+    }
     &[type="email"] {
-      width: 300px;
+      
       background-color: transparent;
       border: 2px solid $grey500;
       border-right: none;
@@ -154,6 +176,7 @@ nav {
         top-left-radius: $xxs;
         bottom-left-radius: $xxs;
       }
+      padding: $m;
     }
     &[type="submit"] {
       cursor: pointer;
@@ -165,10 +188,7 @@ nav {
         bottom-right-radius: $xxs;
       }
       color: $grey100;
-      font: {
-        family: "Poppins Light";
-        size: $l;
-      }
+  
     }
   }
 }

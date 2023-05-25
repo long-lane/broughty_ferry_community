@@ -4,9 +4,10 @@ import { WhoWeAre } from "../components/WhoWeAre";
 import { News } from "../components/News";
 import { FindUs } from "../components/FindUs";
 import { Nav } from "../components/Nav";
+import { Hero } from "../components/Hero";
+import { GetInvolved } from "../components/GetInvolved";
 import { FerryChats } from "../components/FerryChats";
 import { YouthGaff } from "../components/YouthGaff";
-import { Hero } from "../components/Hero";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
@@ -17,11 +18,12 @@ export const MainRoutes = () => {
       <main>
         <Routes>
           <Route path="/who-we-are" element={<WhoWeAre />} />
-          <Route path="/ferry-chats" element={<FerryChats />} />
-          <Route path="/youth-gaff" element={<YouthGaff />} />
-
+          <Route path="/what-we-do/ferry-chats" element={<FerryChats/>} />
+          <Route path="/what-we-do/youth-gaff" element={<YouthGaff/>} />
+          <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/news" element={<News />} />
           <Route path="/find-us" element={<FindUs />} />
+          <Route path="*" to='/' />
         </Routes>
       </main>
       <footer>

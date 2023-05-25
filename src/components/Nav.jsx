@@ -28,7 +28,7 @@ export const Nav = () => {
             <ul>
               <li>
                 <NavLink
-                  to="/ferry-chats"
+                  to="/what-we-do/ferry-chats"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                   }>
@@ -37,7 +37,7 @@ export const Nav = () => {
               </li>
               <li>
                 <NavLink
-                  to="/youth-gaff"
+                  to="/what-we-do/youth-gaff"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : "inactive"
                   }>
@@ -56,21 +56,18 @@ export const Nav = () => {
             news
           </NavLink>
         </li>
+
         <li>
-          <li>
-            <NavLink
-              to="/get-involved"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : "inactive"
-              }>
-              get involved
-            </NavLink>
-          </li>
+          <NavLink
+            to="/get-involved"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : "inactive"
+            }>
+            get involved
+          </NavLink>
         </li>
       </ul>
-      <NavLink
-        to="/contact"
-        className='btn primaryBtn'>
+      <NavLink to="/contact" className="btn primaryBtn">
         contact
       </NavLink>
     </nav>
