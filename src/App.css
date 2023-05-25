@@ -270,7 +270,7 @@ h3 {
     align-items: center;
     align-content: center; }
     nav ul {
-      display: none; }
+      flex-flow: column wrap; }
 
   .subscription {
     flex-flow: column wrap;
@@ -289,6 +289,11 @@ h3 {
     flex-flow: column-reverse wrap;
     row-gap: 60px; }
     .whoWeAre article:first-of-type img {
-      width: 250px; } }
+      width: 250px; }
+
+  .youthGaff,
+  .ferryChats {
+    flex-flow: column wrap;
+    row-gap: 16px; } }
 
 /*# sourceMappingURL=App.css.map */

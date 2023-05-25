@@ -31,7 +31,7 @@
     align-items: center;
     align-content: center;
     ul {
-      display: none;
+      flex-flow: column wrap;
     }
   }
 
@@ -62,5 +62,10 @@
         }
       }
     }
+  }
+  .youthGaff,
+  .ferryChats {
+    flex-flow: column wrap;
+    row-gap: $m;
   }
 }
