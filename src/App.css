@@ -314,9 +314,11 @@ h3 {
       display: flex;
       justify-content: space-between;
       width: 100%; }
-      .mobile-nav-active div span {
-        font-family: "Poppins Bold"; }
-        .mobile-nav-active div span::after {
+      .mobile-nav-active div a {
+        font-family: "Poppins Bold";
+        color: #f58b64;
+        text-decoration: none; }
+        .mobile-nav-active div a::after {
           content: "C";
           color: #73bc8f; }
     .mobile-nav-active ul {
@@ -355,9 +357,11 @@ h3 {
       display: flex;
       justify-content: space-between;
       width: 100%; }
-    .mobile-nav-inactive span {
-      font-family: "Poppins Bold"; }
-      .mobile-nav-inactive span::after {
+    .mobile-nav-inactive a {
+      font-family: "Poppins Bold";
+      color: #f58b64;
+      text-decoration: none; }
+      .mobile-nav-inactive a::after {
         content: "C";
         color: #73bc8f; }
 

@@ -55,14 +55,16 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      span {
+      a {
         font: {
           family: "Poppins Bold";
         }
+        color: $orange600;
         &::after {
           content: "C";
           color: $green500;
         }
+        text-decoration: none;
       }
     }
     font: {
@@ -124,14 +126,16 @@
       width: 100%;
     }
 
-    span {
+    a {
       font: {
         family: "Poppins Bold";
       }
+      color: $orange600;
       &::after {
         content: "C";
         color: $green500;
       }
+      text-decoration: none;
     }
   }
   .nav-icons {

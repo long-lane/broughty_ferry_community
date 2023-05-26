@@ -27,9 +27,16 @@ export const MobileNav = () => {
         className={
           navStatus.navOpen ? "mobile-nav-active" : "mobile-nav-inactive"
         }>
-        <div onClick={toggleMenu}>
-          <span>BF</span>
-          {navStatus.navOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+        <div>
+          <NavHashLink
+            to="/who-we-are"
+            activeClassName="active"
+            onClick={toggleMenu}>
+            BF
+          </NavHashLink>
+          <span onClick={toggleMenu}>
+            {navStatus.navOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+          </span>
         </div>
 
         <ul>
