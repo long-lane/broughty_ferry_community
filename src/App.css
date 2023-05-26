@@ -51,6 +51,7 @@ main {
   padding: 60px;
   display: flex;
   flex-flow: column nowrap;
+  row-gap: 350px;
   justify-content: space-between; }
 
 .desktopNav {
@@ -213,7 +214,7 @@ h3 {
   font-family: "Poppins Medium";
   font-size: 30px;
   text-transform: capitalize;
-  color: #f47a4e; }
+  color: #f8ac91; }
 
 .active {
   color: #5bb17d; }
@@ -308,8 +309,16 @@ h3 {
     row-gap: 30px;
     padding-bottom: 48px;
     font-size: 20px; }
-    .mobile-nav-active span {
-      align-self: flex-end; }
+    .mobile-nav-active div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .mobile-nav-active div span {
+        font-family: "Poppins Bold"; }
+        .mobile-nav-active div span::after {
+          content: "C";
+          color: #73bc8f; }
     .mobile-nav-active ul {
       list-style-type: none;
       display: flex;
@@ -341,6 +350,16 @@ h3 {
     justify-content: flex-end; }
     .mobile-nav-inactive ul {
       display: none; }
+    .mobile-nav-inactive div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .mobile-nav-inactive span {
+      font-family: "Poppins Bold"; }
+      .mobile-nav-inactive span::after {
+        content: "C";
+        color: #73bc8f; }
 
   .nav-icons {
     color: #adb5bd;

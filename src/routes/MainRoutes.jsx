@@ -16,7 +16,16 @@ export const MainRoutes = () => {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route
+            path="/"
+            element={
+              <>
+                
+                <Hero />
+                <WhoWeAre />
+              </>
+            }
+          />
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/what-we-do/" element={<WhatWeDo />} />
           <Route path="/get-involved" element={<GetInvolved />} />

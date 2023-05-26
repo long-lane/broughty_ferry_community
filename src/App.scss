@@ -28,6 +28,7 @@ main {
   padding: $xh;
   display: flex;
   flex-flow: column nowrap;
+  row-gap: 350px;
   justify-content: space-between;
 }
 .desktopNav {
@@ -283,7 +284,7 @@ h3 {
   text: {
     transform: capitalize;
   }
-  color: $orange700;
+  color: $orange400;
 }
 
 .active {

@@ -50,8 +50,20 @@
     padding: {
       bottom: $h;
     }
-    span {
+    div {
       align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      span {
+        font: {
+          family: "Poppins Bold";
+        }
+        &::after {
+          content: "C";
+          color: $green500;
+        }
+      }
     }
     font: {
       size: $xl;
@@ -104,6 +116,22 @@
     justify-content: flex-end;
     ul {
       display: none;
+    }
+    div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    span {
+      font: {
+        family: "Poppins Bold";
+      }
+      &::after {
+        content: "C";
+        color: $green500;
+      }
     }
   }
   .nav-icons {
