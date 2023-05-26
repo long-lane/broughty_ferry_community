@@ -2,10 +2,10 @@ import React from "react";
 import groveAcademy from "../assets/img/grove_academy.png";
 export const YouthGaff = () => {
   return (
-    <section className="youthGaff">
+    <section className="youthGaff" id='youthGaff' >
       <article>
-        <h2>what we do</h2>
-        <h3>youth gaff</h3>
+        
+        <h3 >youth gaff</h3>
         <p>
           Since early this year, we have been working with a range of pupils and
           staff from Grove Academy to design a Youth Survey that will find out

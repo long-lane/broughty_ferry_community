@@ -1,10 +1,9 @@
 @import "./uiSystem.scss";
 
 body {
-  display: flex;
-  align-items: flex-start;
   background-color: $grey100;
   border: 2px solid $grey200;
+
   font: {
     family: "Poppins Light";
     size: $xl;
@@ -12,17 +11,16 @@ body {
   width: 1500px;
   color: $grey800;
 }
-#root,
-.App {
-  width: 100%;
-  height: 100%;
+#root {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 header {
   padding: $xh;
   display: flex;
   flex-flow: column nowrap;
-  min-height: 850px;
+
   justify-content: space-between;
 }
 
@@ -32,9 +30,9 @@ main {
   flex-flow: column nowrap;
   justify-content: space-between;
 }
-nav {
+.desktopNav {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-content: baseline;
   font: {
@@ -47,6 +45,8 @@ nav {
   }
 
   ul {
+    flex: 1 1 auto;
+    justify-content: center;
     text: {
       transform: capitalize;
     }
@@ -105,7 +105,9 @@ nav {
     }
   }
 }
-
+.mobileNav {
+  display: none;
+}
 .hero {
   display: flex;
   flex-flow: row wrap;
@@ -151,7 +153,6 @@ nav {
       img {
         filter: brightness(1.4);
         width: 350px;
-        object-fit: cover;
       }
     }
   }
@@ -168,6 +169,7 @@ nav {
       size: $l;
     }
     &[type="email"] {
+      width: calc(4 *#{$phi}*#{$h});
       background-color: transparent;
       border: 2px solid $grey500;
       border-right: none;
@@ -179,7 +181,7 @@ nav {
     }
     &[type="submit"] {
       cursor: pointer;
-      width: 180px;
+      width: calc(2 *#{$phi}*#{$h});
       border: 2px solid $green700;
       background-color: $green700;
       border: {
@@ -188,7 +190,7 @@ nav {
       }
       color: $grey100;
       &:hover {
-        opacity: 0.9;
+        background-color: $green800;
       }
     }
   }
@@ -221,6 +223,11 @@ nav {
   }
 }
 
+.whatWeDo {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: $xh;
+}
 .youthGaff,
 .ferryChats {
   display: flex;
@@ -231,8 +238,8 @@ nav {
     display: flex;
     flex-flow: column wrap;
     row-gap: $m;
-    &:first-of-type{
-      address{
+    &:first-of-type {
+      address {
         display: inline-flex;
       }
     }
@@ -279,10 +286,7 @@ h3 {
 }
 
 .active {
-  color: $green700;
-  font: {
-    family: "Poppins Bold";
-  }
+  color: $green600;
 }
 
 .inactive {
@@ -297,11 +301,13 @@ h3 {
   border: 2px solid $green700;
   border-radius: $xxs;
   height: $h;
+  min-width: calc(2 *#{$phi}*#{$h});
   text: {
     decoration: none;
     transform: capitalize;
+    align: center;
   }
-  font:{
+  font: {
     size: $l;
   }
 }
@@ -310,17 +316,14 @@ h3 {
   background-color: $green700;
   color: $grey100;
   &:hover {
-    opacity: 0.9;
+    background-color: $green800;
   }
 }
 .secondaryBtn {
-  // background-color: $green700;
   color: $green700;
   &:hover {
-    opacity: 0.9;
-    filter: hue-rotate(227deg)
+    filter: hue-rotate(227deg);
   }
-  
 }
 /* Responsiveness */
 @import "./tablet.scss";

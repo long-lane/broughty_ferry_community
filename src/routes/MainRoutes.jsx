@@ -6,24 +6,23 @@ import { FindUs } from "../components/FindUs";
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { GetInvolved } from "../components/GetInvolved";
-import { FerryChats } from "../components/FerryChats";
-import { YouthGaff } from "../components/YouthGaff";
+
+import { WhatWeDo } from "../components/WhatWeDo";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
-      <header>
+      <header className="">
         <Nav />
-        <Hero />
       </header>
       <main>
         <Routes>
+          <Route path="/" element={<Hero />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
-          <Route path="/what-we-do/ferry-chats" element={<FerryChats/>} />
-          <Route path="/what-we-do/youth-gaff" element={<YouthGaff/>} />
+          <Route path="/what-we-do/" element={<WhatWeDo />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/news" element={<News />} />
           <Route path="/find-us" element={<FindUs />} />
-          <Route path="*" to='/' />
+          <Route path="*" to="/" />
         </Routes>
       </main>
       <footer>

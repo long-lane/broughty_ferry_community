@@ -5,10 +5,11 @@
   .hero {
     row-gap: $xh;
   }
-  nav {
-    ul {
-      flex-flow: column wrap;
-    }
+  .desktopNav {
+    display: none;
+  }
+  .mobileNav{
+    display:flex;
   }
   .whoWeAre {
     flex-flow: column-reverse wrap;
@@ -26,5 +27,4 @@
     flex-flow: column wrap;
     row-gap: $m;
   }
-  
 }
