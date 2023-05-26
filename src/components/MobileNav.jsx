@@ -28,7 +28,7 @@ export const MobileNav = () => {
           navStatus.navOpen ? "mobile-nav-active" : "mobile-nav-inactive"
         }>
         <div>
-          <NavHashLink to="/who-we-are" activeClassName="active">
+          <NavHashLink to="/" activeClassName="active">
             BF
           </NavHashLink>
           <span onClick={toggleMenu}>
