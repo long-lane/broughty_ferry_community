@@ -92,7 +92,8 @@ main {
       .desktopNav ul details ul li {
         padding-left: 16px; }
 
-.mobileNav {
+.mobile-nav-active,
+.mobile-nav-inactive {
   display: none; }
 
 .hero {
