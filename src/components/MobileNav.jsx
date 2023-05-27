@@ -1,5 +1,5 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
@@ -28,7 +28,7 @@ export const MobileNav = () => {
           navStatus.navOpen ? "mobile-nav-active" : "mobile-nav-inactive"
         }>
         <div>
-          <NavHashLink to="/" activeClassName="active"></NavHashLink>
+          <HashLink to="/" activeClassName="active"></HashLink>
           <span onClick={toggleMenu}>
             {navStatus.navOpen ? <RxCross1 /> : <RxHamburgerMenu />}
           </span>
@@ -37,12 +37,12 @@ export const MobileNav = () => {
         <ul>
           <li>
             <BsPeople />
-            <NavHashLink
+            <HashLink
               to="/#who-we-are"
               activeClassName="active"
               onClick={toggleMenu}>
               who we are
-            </NavHashLink>
+            </HashLink>
           </li>
           <li>
             <details>
@@ -62,28 +62,25 @@ export const MobileNav = () => {
           </li>
           <li>
             <BsNewspaper />
-            <NavHashLink
-              to="/news"
-              activeClassName="active"
-              onClick={toggleMenu}>
+            <HashLink to="/news" activeClassName="active" onClick={toggleMenu}>
               news
-            </NavHashLink>
+            </HashLink>
           </li>
 
           <li>
             <BsHandThumbsUp />
-            <NavHashLink
+            <HashLink
               to="/get-involved"
               activeClassName="active"
               onClick={toggleMenu}>
               get involved
-            </NavHashLink>
+            </HashLink>
           </li>
           <li>
             <BsChatSquareHeart />
-            <NavHashLink to="/#contact" activeClassName="active" onClick={toggleMenu}>
+            <HashLink to="/#contact" onClick={toggleMenu}>
               contact
-            </NavHashLink>
+            </HashLink>
           </li>
         </ul>
       </nav>
