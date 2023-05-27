@@ -282,11 +282,13 @@ h3 {
       width: 100%; }
       .mobile-nav-active div a {
         font-family: "Poppins Bold";
-        color: #f58b64;
         text-decoration: none; }
-        .mobile-nav-active div a::after {
-          content: "C";
+        .mobile-nav-active div a::before {
+          content: "Broughty Ferry";
           color: #73bc8f; }
+        .mobile-nav-active div a::after {
+          content: " Community";
+          color: #f79b7a; }
     .mobile-nav-active ul {
       list-style-type: none;
       display: flex;
@@ -325,11 +327,13 @@ h3 {
       width: 100%; }
     .mobile-nav-inactive a {
       font-family: "Poppins Bold";
-      color: #f58b64;
       text-decoration: none; }
-      .mobile-nav-inactive a::after {
-        content: "C";
+      .mobile-nav-inactive a::before {
+        content: "Broughty Ferry";
         color: #73bc8f; }
+      .mobile-nav-inactive a::after {
+        content: " Community";
+        color: #f79b7a; }
 
   .nav-icons {
     color: #adb5bd;
@@ -404,11 +408,13 @@ h3 {
       width: 100%; }
       .mobile-nav-active div a {
         font-family: "Poppins Bold";
-        color: #f58b64;
         text-decoration: none; }
+        .mobile-nav-active div a::before {
+          content: "BF";
+          color: #73bc8f; }
         .mobile-nav-active div a::after {
           content: "C";
-          color: #73bc8f; }
+          color: #f79b7a; }
     .mobile-nav-active ul {
       list-style-type: none;
       display: flex;
@@ -447,11 +453,13 @@ h3 {
       width: 100%; }
     .mobile-nav-inactive a {
       font-family: "Poppins Bold";
-      color: #f58b64;
       text-decoration: none; }
+      .mobile-nav-inactive a::before {
+        content: "BF";
+        color: #73bc8f; }
       .mobile-nav-inactive a::after {
         content: "C";
-        color: #73bc8f; }
+        color: #f79b7a; }
 
   .nav-icons {
     color: #adb5bd;

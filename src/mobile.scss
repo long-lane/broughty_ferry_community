@@ -77,10 +77,14 @@
         font: {
           family: "Poppins Bold";
         }
-        color: $orange600;
+        
+        &::before {
+          content: "BF";
+          color: $green500;
+        }
         &::after {
           content: "C";
-          color: $green500;
+          color: $orange500;
         }
         text-decoration: none;
       }
@@ -148,10 +152,14 @@
       font: {
         family: "Poppins Bold";
       }
-      color: $orange600;
+      
+      &::before {
+        content: "BF";
+        color: $green500;
+      }
       &::after {
         content: "C";
-        color: $green500;
+        color: $orange500;
       }
       text-decoration: none;
     }

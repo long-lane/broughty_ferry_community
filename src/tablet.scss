@@ -1,5 +1,5 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    header {
+  header {
     row-gap: $h;
     padding: $xl;
     position: sticky;
@@ -10,7 +10,7 @@
     border-bottom: 2px solid $grey200;
     box-shadow: 0 $xxs $h 0 rgba($grey500, $alpha: 0.2);
   }
-  .hero{
+  .hero {
     row-gap: $xh;
   }
   .mobile-nav-active {
@@ -30,10 +30,14 @@
         font: {
           family: "Poppins Bold";
         }
-        color: $orange600;
-        &::after {
-          content: "C";
+
+        &::before {
+          content: "Broughty Ferry";
           color: $green500;
+        }
+        &::after {
+          content: " Community";
+          color: $orange500;
         }
         text-decoration: none;
       }
@@ -101,10 +105,14 @@
       font: {
         family: "Poppins Bold";
       }
-      color: $orange600;
-      &::after {
-        content: "C";
+
+      &::before {
+        content: "Broughty Ferry";
         color: $green500;
+      }
+      &::after {
+        content: " Community";
+        color: $orange500;
       }
       text-decoration: none;
     }
@@ -113,8 +121,6 @@
     color: $grey500;
     font-size: $xl;
   }
-
-  
 
   .whoWeAre {
     flex-flow: column-reverse wrap;
