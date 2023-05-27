@@ -344,6 +344,9 @@ h3 {
     border-bottom: 2px solid #e9ecef;
     box-shadow: 0 7px 48px 0 rgba(173, 181, 189, 0.2); }
 
+  main {
+    padding-bottom: 0; }
+
   footer {
     border-radius: 0;
     row-gap: 48px; }
@@ -434,14 +437,18 @@ h3 {
     .whoWeAre article:first-of-type img {
       width: 250px; }
 
-  .ferry-chats, .youth-gaff {
+  .ferry-chats,
+  .youth-gaff {
     row-gap: 48px; }
-    .ferry-chats article:last-of-type, .youth-gaff article:last-of-type {
+    .ferry-chats article:last-of-type,
+    .youth-gaff article:last-of-type {
       flex-flow: column nowrap;
       flex: 1 1 100%; }
-      .ferry-chats article:last-of-type p, .youth-gaff article:last-of-type p {
+      .ferry-chats article:last-of-type p,
+      .youth-gaff article:last-of-type p {
         max-width: 50ch; }
-      .ferry-chats article:last-of-type iframe, .youth-gaff article:last-of-type iframe {
+      .ferry-chats article:last-of-type iframe,
+      .youth-gaff article:last-of-type iframe {
         max-width: 50ch; }
 
   .youth-gaff {
@@ -466,7 +473,10 @@ h3 {
     box-shadow: 0 7px 48px 0 rgba(173, 181, 189, 0.2); }
 
   main {
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
     row-gap: 150px; }
 
   footer {
@@ -588,14 +598,18 @@ h3 {
     .whoWeAre article:first-of-type img {
       width: 250px; }
 
-  .ferry-chats, .youth-gaff {
+  .ferry-chats,
+  .youth-gaff {
     flex-flow: column nowrap;
     row-gap: 48px; }
-    .ferry-chats article:first-of-type img, .youth-gaff article:first-of-type img {
+    .ferry-chats article:first-of-type img,
+    .youth-gaff article:first-of-type img {
       width: 250px; }
-    .ferry-chats article:last-of-type, .youth-gaff article:last-of-type {
+    .ferry-chats article:last-of-type,
+    .youth-gaff article:last-of-type {
       flex-flow: column nowrap; }
-      .ferry-chats article:last-of-type iframe, .youth-gaff article:last-of-type iframe {
+      .ferry-chats article:last-of-type iframe,
+      .youth-gaff article:last-of-type iframe {
         max-width: 100%; }
 
   .youth-gaff {

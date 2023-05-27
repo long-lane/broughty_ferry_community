@@ -13,6 +13,9 @@
     border-bottom: 2px solid $grey200;
     box-shadow: 0 $xxs $h 0 rgba($grey500, $alpha: 0.2);
   }
+  main {
+    padding-bottom: 0;
+  }
   footer {
     border-radius: 0;
     row-gap: $h;
@@ -157,7 +160,8 @@
     }
   }
 
-  .ferry-chats,.youth-gaff  {
+  .ferry-chats,
+  .youth-gaff {
     row-gap: $h;
     article {
       &:last-of-type {
@@ -166,21 +170,21 @@
         // background-color: red;
 
         flex: 1 1 100%;
-        p{
+        p {
           max-width: 50ch;
         }
-        iframe{
+        iframe {
           max-width: 50ch;
         }
       }
     }
   }
   .youth-gaff {
-    flex-flow: column-reverse wrap ;
-    article{
-      &:first-of-type{
-        img{
-          width:250px;
+    flex-flow: column-reverse wrap;
+    article {
+      &:first-of-type {
+        img {
+          width: 250px;
         }
       }
     }

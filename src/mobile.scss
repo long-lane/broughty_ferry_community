@@ -18,7 +18,12 @@
   }
 
   main {
-    padding: $m;
+    padding: {
+      top: $m;
+      left: $m;
+      right: $m;
+      bottom: 0;
+    }
     row-gap: 150px;
   }
   footer {
@@ -212,7 +217,8 @@
       }
     }
   }
-  .ferry-chats,.youth-gaff {
+  .ferry-chats,
+  .youth-gaff {
     flex-flow: column nowrap;
 
     row-gap: $h;
@@ -233,11 +239,11 @@
     }
   }
   .youth-gaff {
-    flex-flow: column-reverse wrap ;
-    article{
-      &:first-of-type{
-        img{
-          width:150px;
+    flex-flow: column-reverse wrap;
+    article {
+      &:first-of-type {
+        img {
+          width: 150px;
         }
       }
     }
