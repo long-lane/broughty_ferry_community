@@ -28,7 +28,7 @@ export const MobileNav = () => {
           navStatus.navOpen ? "mobile-nav-active" : "mobile-nav-inactive"
         }>
         <div>
-          <HashLink to="/" activeClassName="active"></HashLink>
+          <HashLink to="/broughty_ferry_community/" activeClassName="active"></HashLink>
           <span onClick={toggleMenu}>
             {navStatus.navOpen ? <RxCross1 /> : <RxHamburgerMenu />}
           </span>
@@ -38,7 +38,7 @@ export const MobileNav = () => {
           <li>
             <BsPeople />
             <HashLink
-              to="/#who-we-are"
+              to="/broughty_ferry_community/#who-we-are"
               activeClassName="active"
               onClick={toggleMenu}>
               who we are
@@ -52,12 +52,12 @@ export const MobileNav = () => {
               </summary>
               <ul>
                 <li>
-                  <NavLink to="/what-we-do/ferry-chats" onClick={toggleMenu}>
+                  <NavLink to="/broughty_ferry_community/what-we-do/ferry-chats" onClick={toggleMenu}>
                     ferry chats
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/what-we-do/youth-gaff" onClick={toggleMenu}>
+                  <NavLink to="/broughty_ferry_community/what-we-do/youth-gaff" onClick={toggleMenu}>
                     youth gaff
                   </NavLink>
                 </li>
@@ -66,7 +66,7 @@ export const MobileNav = () => {
           </li>
           <li>
             <BsNewspaper />
-            <HashLink to="/news" activeClassName="active" onClick={toggleMenu}>
+            <HashLink to="/broughty_ferry_community/news" activeClassName="active" onClick={toggleMenu}>
               news
             </HashLink>
           </li>
@@ -74,7 +74,7 @@ export const MobileNav = () => {
           <li>
             <BsHandThumbsUp />
             <HashLink
-              to="/get-involved"
+              to="/broughty_ferry_community/get-involved"
               activeClassName="active"
               onClick={toggleMenu}>
               get involved
@@ -82,7 +82,7 @@ export const MobileNav = () => {
           </li>
           <li>
             <BsChatSquareHeart />
-            <HashLink to="/#contact" onClick={toggleMenu}>
+            <HashLink to="/broughty_ferry_community/#contact" onClick={toggleMenu}>
               contact
             </HashLink>
           </li>

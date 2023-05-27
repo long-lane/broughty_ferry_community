@@ -18,7 +18,7 @@ export const MainRoutes = () => {
       <main>
         <Routes>
           <Route
-            path="/"
+            path="/broughty_ferry_community/"
             element={
               <>
                 <Hero />
@@ -26,14 +26,26 @@ export const MainRoutes = () => {
               </>
             }
           />
-          <Route path="/who-we-are" element={<WhoWeAre />} />
-          <Route path="/what-we-do/ferry-chats" element={<FerryChats />} />
-          <Route path="/what-we-do/youth-gaff" element={<YouthGaff />} />
+          <Route
+            path="/broughty_ferry_community/who-we-are"
+            element={<WhoWeAre />}
+          />
+          <Route
+            path="/broughty_ferry_community/what-we-do/ferry-chats"
+            element={<FerryChats />}
+          />
+          <Route
+            path="/broughty_ferry_community/what-we-do/youth-gaff"
+            element={<YouthGaff />}
+          />
 
-          <Route path="/get-involved" element={<GetInvolved />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/find-us" element={<FindUs />} />
-          <Route path="*" to="/" />
+          <Route
+            path="/broughty_ferry_community/get-involved"
+            element={<GetInvolved />}
+          />
+          <Route path="/broughty_ferry_community/news" element={<News />} />
+
+          <Route path="*" to="/broughty_ferry_community/" />
         </Routes>
       </main>
       <footer>
