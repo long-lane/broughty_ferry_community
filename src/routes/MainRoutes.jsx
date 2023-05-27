@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WhoWeAre } from "../components/WhoWeAre";
 import { News } from "../components/News";
-import { FindUs } from "../components/FindUs";
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { GetInvolved } from "../components/GetInvolved";

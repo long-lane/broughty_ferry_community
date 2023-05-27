@@ -30,7 +30,8 @@ export const MobileNav = () => {
         <div>
           <HashLink
             to="/broughty_ferry_community/"
-            activeClassName="active"></HashLink>
+            
+            ></HashLink>
           <span onClick={toggleMenu}>
             {navStatus.navOpen ? <RxCross1 /> : <RxHamburgerMenu />}
           </span>
@@ -41,7 +42,7 @@ export const MobileNav = () => {
             <BsPeople />
             <HashLink
               to="/broughty_ferry_community/#who-we-are"
-              activeClassName="active"
+              
               onClick={toggleMenu}
               scroll=
               {(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}>
@@ -77,7 +78,7 @@ export const MobileNav = () => {
             <BsNewspaper />
             <HashLink
               to="/broughty_ferry_community/news"
-              activeClassName="active"
+              
               onClick={toggleMenu}>
               news
             </HashLink>
@@ -87,7 +88,7 @@ export const MobileNav = () => {
             <BsHandThumbsUp />
             <HashLink
               to="/broughty_ferry_community/get-involved"
-              activeClassName="active"
+              
               onClick={toggleMenu}>
               get involved
             </HashLink>
