@@ -39,7 +39,7 @@ export const MobileNav = () => {
           <li>
             <BsPeople />
             <NavHashLink
-              to="/who-we-are"
+              to="/#who-we-are"
               activeClassName="active"
               onClick={toggleMenu}>
               who we are
