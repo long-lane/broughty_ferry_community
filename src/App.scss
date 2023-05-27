@@ -1,6 +1,6 @@
 @import "./uiSystem.scss";
 
-.App{
+.App {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -60,7 +60,7 @@ footer {
     color: $orange100;
   }
   article {
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     &:first-of-type {
       address {
@@ -313,29 +313,57 @@ footer {
   flex-flow: column wrap;
   row-gap: $xh;
 }
-.youthGaff,
-.ferryChats {
+
+.ferry-chats {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   column-gap: $h;
   article {
-    flex: 1 0 40%;
+    flex: 0 0 40%;
     display: flex;
-    flex-flow: column wrap;
-    row-gap: $m;
+
     &:first-of-type {
-      address {
-        display: inline-flex;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        width: 550px;
+      }
+      background: {
+        image: url("./assets/img/ferry_chats_bkg.svg");
+        repeat: no-repeat;
+        size: cover;
       }
     }
     &:last-of-type {
-      justify-content: flex-end;
+      flex-flow: row wrap;
+      row-gap: $l;
+      h3 {
+        flex: 1 1 100%;
+      }
+      a {
+        padding: {
+          left: $xxs;
+        }
+        text: {
+          decoration: none;
+        }
+        color: $orange700;
+      }
 
-      img {
-        width: 100%;
+      iframe {
+        margin-top: $xh;
+        border: none;
+        flex: 1 1 100%;
+        
       }
     }
   }
+}
+
+.youth-gaff{
+  display:none;
 }
 h1 {
   font: {

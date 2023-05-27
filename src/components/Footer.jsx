@@ -12,7 +12,7 @@ export const Footer = () => {
               <a
                 href="mailto:broughtyferrycommunitycharity@gmail.com"
                 rel="noopener noreferrer">
-                <BsEnvelopeFill /> broughtyferrycommunity @gmail.com
+                <BsEnvelopeFill /> broughtyferrycommunity<wbr/>@gmail.com
               </a>
             </li>
             <li>

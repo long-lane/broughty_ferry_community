@@ -19,6 +19,7 @@
 
   main {
     padding: $m;
+    row-gap: 150px;
   }
   footer {
     padding: $xl $xl $xs $xl;
@@ -211,9 +212,24 @@
       }
     }
   }
-  .youthGaff,
-  .ferryChats {
-    flex-flow: column wrap;
-    row-gap: $m;
+  .ferry-chats {
+    flex-flow: column nowrap;
+
+    row-gap: $h;
+
+    article {
+      &:first-of-type {
+        img {
+          width: 250px;
+        }
+      }
+      &:last-of-type {
+        flex-flow: column nowrap;
+
+        iframe {
+          max-width: 100%;
+        }
+      }
+    }
   }
 }

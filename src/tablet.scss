@@ -156,9 +156,23 @@
       }
     }
   }
-  .youthGaff,
-  .ferryChats {
-    flex-flow: column wrap;
-    row-gap: $m;
+
+  .ferry-chats {
+    row-gap: $h;
+    article {
+      &:last-of-type {
+        flex-flow: column nowrap;
+        // row-gap: $h;
+        // background-color: red;
+
+        flex: 1 1 100%;
+        p{
+          max-width: 50ch;
+        }
+        iframe{
+          max-width: 50ch;
+        }
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import groveAcademy from "../assets/img/grove_academy.png";
 export const YouthGaff = () => {
   return (
-    <section className="youthGaff" id='youthGaff' >
+    <section className="youth-gaff" id='youthGaff' >
       <article>
         
         <h3 >youth gaff</h3>

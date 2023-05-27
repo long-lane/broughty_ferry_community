@@ -234,26 +234,39 @@ footer {
   flex-flow: column wrap;
   row-gap: 60px; }
 
-.youthGaff,
-.ferryChats {
+.ferry-chats {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   column-gap: 48px; }
-  .youthGaff article,
-  .ferryChats article {
-    flex: 1 0 40%;
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 16px; }
-    .youthGaff article:first-of-type address,
-    .ferryChats article:first-of-type address {
-      display: inline-flex; }
-    .youthGaff article:last-of-type,
-    .ferryChats article:last-of-type {
-      justify-content: flex-end; }
-      .youthGaff article:last-of-type img,
-      .ferryChats article:last-of-type img {
-        width: 100%; }
+  .ferry-chats article {
+    flex: 0 0 40%;
+    display: flex; }
+    .ferry-chats article:first-of-type {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-image: url("./assets/img/ferry_chats_bkg.svg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .ferry-chats article:first-of-type img {
+        width: 550px; }
+    .ferry-chats article:last-of-type {
+      flex-flow: row wrap;
+      row-gap: 18px; }
+      .ferry-chats article:last-of-type h3 {
+        flex: 1 1 100%; }
+      .ferry-chats article:last-of-type a {
+        padding-left: 7px;
+        text-decoration: none;
+        color: #f47a4e; }
+      .ferry-chats article:last-of-type iframe {
+        margin-top: 60px;
+        border: none;
+        flex: 1 1 100%; }
+
+.youth-gaff {
+  display: none; }
 
 h1 {
   font-size: 48px;
@@ -412,10 +425,15 @@ h3 {
     .whoWeAre article:first-of-type img {
       width: 250px; }
 
-  .youthGaff,
-  .ferryChats {
-    flex-flow: column wrap;
-    row-gap: 16px; } }
+  .ferry-chats {
+    row-gap: 48px; }
+    .ferry-chats article:last-of-type {
+      flex-flow: column nowrap;
+      flex: 1 1 100%; }
+      .ferry-chats article:last-of-type p {
+        max-width: 50ch; }
+      .ferry-chats article:last-of-type iframe {
+        max-width: 50ch; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   #root {
     position: relative; }
@@ -434,7 +452,8 @@ h3 {
     box-shadow: 0 7px 48px 0 rgba(173, 181, 189, 0.2); }
 
   main {
-    padding: 16px; }
+    padding: 16px;
+    row-gap: 150px; }
 
   footer {
     padding: 20px 20px 12px 20px;
@@ -555,9 +574,14 @@ h3 {
     .whoWeAre article:first-of-type img {
       width: 250px; }
 
-  .youthGaff,
-  .ferryChats {
-    flex-flow: column wrap;
-    row-gap: 16px; } }
+  .ferry-chats {
+    flex-flow: column nowrap;
+    row-gap: 48px; }
+    .ferry-chats article:first-of-type img {
+      width: 250px; }
+    .ferry-chats article:last-of-type {
+      flex-flow: column nowrap; }
+      .ferry-chats article:last-of-type iframe {
+        max-width: 100%; } }
 
 /*# sourceMappingURL=App.css.map */
