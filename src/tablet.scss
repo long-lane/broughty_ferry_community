@@ -1,4 +1,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    margin: 0;
+  }
   header {
     row-gap: $h;
     padding: $xl;
@@ -9,6 +12,19 @@
     background-color: $grey100;
     border-bottom: 2px solid $grey200;
     box-shadow: 0 $xxs $h 0 rgba($grey500, $alpha: 0.2);
+  }
+  footer {
+    border-radius: 0;
+    row-gap: $h;
+    article {
+      row-gap: $xl;
+      &:last-of-type {
+        justify-content: center;
+        p {
+          // border-top: none;
+        }
+      }
+    }
   }
   .hero {
     row-gap: $xh;

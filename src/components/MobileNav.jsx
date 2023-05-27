@@ -20,7 +20,6 @@ export const MobileNav = () => {
     const payload = { navOpen: !navStatus.navOpen };
     const action = { type: "navDisplay", payload: payload };
     dispatch(action);
-    console.log(navStatus);
   };
   return (
     <IconContext.Provider value={{ className: "nav-icons" }}>
@@ -82,7 +81,7 @@ export const MobileNav = () => {
           </li>
           <li>
             <BsChatSquareHeart />
-            <NavHashLink to="/" activeClassName="active" onClick={toggleMenu}>
+            <NavHashLink to="/#contact" activeClassName="active" onClick={toggleMenu}>
               contact
             </NavHashLink>
           </li>

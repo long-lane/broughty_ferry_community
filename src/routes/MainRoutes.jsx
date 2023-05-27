@@ -8,6 +8,7 @@ import { Hero } from "../components/Hero";
 import { GetInvolved } from "../components/GetInvolved";
 import { FerryChats } from "../components/FerryChats";
 import { YouthGaff } from "../components/YouthGaff";
+import { Footer } from "../components/Footer";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
@@ -36,7 +37,7 @@ export const MainRoutes = () => {
         </Routes>
       </main>
       <footer>
-        <p>footer</p>
+        <Footer />
       </footer>
     </BrowserRouter>
   );

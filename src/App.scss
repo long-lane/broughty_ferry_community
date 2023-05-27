@@ -1,8 +1,13 @@
 @import "./uiSystem.scss";
 
 body {
+  margin: {
+    top: $h;
+    bottom: $h;
+  }
   background-color: $grey100;
   border: 2px solid $grey200;
+  border-radius: $xxs;
 
   font: {
     family: "Poppins Light";
@@ -30,6 +35,71 @@ main {
   flex-flow: column nowrap;
   row-gap: 350px;
   justify-content: space-between;
+}
+
+footer {
+  padding: $xh $xh $xs $xh;
+  background-color: $orange700;
+  border-bottom: {
+    left-radius: $xxs;
+    right-radius: $xxs;
+  }
+
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: $xl;
+
+  h2 {
+    flex: 1 1 100%;
+    color: $orange100;
+  }
+  article {
+    display:flex;
+    flex-flow: column nowrap;
+    &:first-of-type {
+      address {
+        all: unset;
+        ul {
+          display: flex;
+          flex-flow: column wrap;
+          row-gap: $xxs;
+          list-style-type: none;
+          a {
+            color: $orange100;
+            display: inline-flex;
+            align-items: baseline;
+            column-gap: $xs;
+            text: {
+              decoration: none;
+            }
+            font: {
+              family: "Poppins Medium";
+            }
+            &:hover {
+              color: $grey100;
+            }
+          }
+        }
+      }
+    }
+    &:last-of-type {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      p {
+        text-align: center;
+        width: 60ch;
+        border-top: 2px solid $orange300;
+        padding-top: $m;
+        font: {
+          size: $s;
+          family: "Poppins Bold";
+        }
+        color: $orange100;
+      }
+    }
+  }
 }
 .desktop-nav {
   display: flex;

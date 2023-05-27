@@ -2,7 +2,7 @@ import React from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.webp";
-
+``
 export const DesktopNav = () => {
   return (
     <nav className="desktop-nav">
