@@ -52,10 +52,14 @@ export const MobileNav = () => {
               </summary>
               <ul>
                 <li>
-                  <NavLink to="/what-we-do/ferry-chats">ferry chats</NavLink>
+                  <NavLink to="/what-we-do/ferry-chats" onClick={toggleMenu}>
+                    ferry chats
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/what-we-do/youth-gaff">youth gaff</NavLink>
+                  <NavLink to="/what-we-do/youth-gaff" onClick={toggleMenu}>
+                    youth gaff
+                  </NavLink>
                 </li>
               </ul>
             </details>
