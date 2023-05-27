@@ -29,6 +29,11 @@ html {
 a {
   color: #212529; }
 
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+
 body {
   margin-top: 48px;
   margin-bottom: 48px;

@@ -1,5 +1,10 @@
 @import "./uiSystem.scss";
 
+.App{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 body {
   margin: {
     top: $h;
