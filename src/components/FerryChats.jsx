@@ -11,7 +11,7 @@ export const FerryChats = ({ props }) => {
       {showMeetings ? <Meetings /> : ""}
       <section className="ferry-chats">
         <article>
-          <img src={ferryChats} alt="" />
+          <img src={ferryChats} alt="" loading="lazy"/>
         </article>
         <article id="ferryChats">
           <h3>ferry chats</h3>

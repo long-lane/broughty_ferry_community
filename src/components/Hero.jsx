@@ -24,7 +24,7 @@ export const Hero = () => {
         </form>
       </article>
       <article>
-        <img src={hero} />
+        <img src={hero} alt='' loading="lazy"/>
       </article>
     </section>
   );

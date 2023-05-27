@@ -5,7 +5,7 @@ export const WhoWeAre = () => {
   return (
     <section className="whoWeAre">
       <article>
-        <img src={whoWeAre} alt="" />
+        <img src={whoWeAre} alt="" loading="lazy" />
       </article>
       <article  id='who-we-are'>
         <h2>who we are</h2>

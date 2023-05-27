@@ -8,7 +8,7 @@ export const YouthGaff = ({ props }) => {
   return (
     <section className="youth-gaff">
       <article>
-        <img src={youthGaff} alt="" />
+        <img src={youthGaff} alt="" loading="lazy"/>
       </article>
       <article>
         <h3>youth gaff</h3>
