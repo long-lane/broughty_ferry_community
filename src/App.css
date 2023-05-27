@@ -246,7 +246,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      background-image: url("./assets/img/ferry_chats_bkg.svg");
+      background-image: url("./assets/img/who_we_are_bkg.svg");
       background-repeat: no-repeat;
       background-size: cover; }
       .ferry-chats article:first-of-type img {
