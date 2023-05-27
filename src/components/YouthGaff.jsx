@@ -35,7 +35,7 @@ export const YouthGaff = ({ props }) => {
           <p>
             We are working with the pupils at Grove Academy to share the results
             in the community and to raise awareness of the need of a 'place to
-            go'
+            go'.
           </p>
         )}
         {showBtn ? (
