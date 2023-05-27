@@ -3,11 +3,11 @@ import whoWeAre from "../assets/img/who_we_are.webp";
 import { NavLink } from "react-router-dom";
 export const WhoWeAre = () => {
   return (
-    <section className="whoWeAre" id='who-we-are'>
+    <section className="whoWeAre">
       <article>
         <img src={whoWeAre} alt="" />
       </article>
-      <article>
+      <article  id='who-we-are'>
         <h2>who we are</h2>
         <p>
           We are a local group of volunteers who held a Community Meeting at the

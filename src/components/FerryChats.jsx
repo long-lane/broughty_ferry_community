@@ -2,11 +2,11 @@ import React from "react";
 import ferryChats from "../assets/img/ferry_chats.png";
 export const FerryChats = () => {
   return (
-    <section className="ferry-chats" id="ferryChats">
+    <section className="ferry-chats" >
       <article>
         <img src={ferryChats} alt="" />
       </article>
-      <article>
+      <article id="ferryChats">
         <h3>ferry chats</h3>
         <p>
           Pop in and join our <b>Ferry Chats</b> sessions held on Tuesdays at
