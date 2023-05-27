@@ -32,7 +32,8 @@ a {
 .App {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 100vh; }
 
 body {
   margin-top: 48px;
