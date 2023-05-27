@@ -22,7 +22,10 @@ export const MainRoutes = () => {
               <>
                 <Hero />
                 <WhoWeAre />
-                <FerryChats props={{ showBtn: true, showMap: false, showMeetings : false }} />
+                <FerryChats
+                  props={{ showBtn: true, showMap: false, showMeetings: false }}
+                />
+                <YouthGaff props={{ showBtn: true, fullDescription: false }} />
               </>
             }
           />
@@ -32,11 +35,17 @@ export const MainRoutes = () => {
           />
           <Route
             path="/broughty_ferry_community/what-we-do/ferry-chats"
-            element={<FerryChats props={{ showBtn: false, showMap: true, showMeetings : true }} />}
+            element={
+              <FerryChats
+                props={{ showBtn: false, showMap: true, showMeetings: true }}
+              />
+            }
           />
           <Route
             path="/broughty_ferry_community/what-we-do/youth-gaff"
-            element={<YouthGaff />}
+            element={
+              <YouthGaff props={{ showBtn: false, fullDescription: true }} />
+            }
           />
 
           <Route

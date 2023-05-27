@@ -212,7 +212,7 @@
       }
     }
   }
-  .ferry-chats {
+  .ferry-chats,.youth-gaff {
     flex-flow: column nowrap;
 
     row-gap: $h;
@@ -228,6 +228,16 @@
 
         iframe {
           max-width: 100%;
+        }
+      }
+    }
+  }
+  .youth-gaff {
+    flex-flow: column-reverse wrap ;
+    article{
+      &:first-of-type{
+        img{
+          width:150px;
         }
       }
     }
