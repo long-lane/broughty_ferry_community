@@ -12,6 +12,13 @@
   }
   .hero {
     row-gap: $xh;
+    article {
+      &:last-of-type {
+        img {
+          width: 250px;
+        }
+      }
+    }
   }
   .mobile-nav-active {
     display: flex;

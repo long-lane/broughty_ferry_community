@@ -249,9 +249,10 @@ h3 {
     background-color: #2c9b58; }
 
 .secondaryBtn {
-  color: #44a66a; }
+  color: #f47a4e;
+  border-color: #f47a4e; }
   .secondaryBtn:hover {
-    filter: hue-rotate(227deg); }
+    filter: hue-rotate(-227deg); }
 
 /* Responsiveness */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -267,6 +268,8 @@ h3 {
 
   .hero {
     row-gap: 60px; }
+    .hero article:last-of-type img {
+      width: 250px; }
 
   .mobile-nav-active {
     display: flex;
@@ -380,7 +383,7 @@ h3 {
   .subscription {
     row-gap: 16px;
     box-shadow: none;
-    width: 90%;
+    width: 100%;
     flex-flow: column nowrap; }
     .subscription input {
       border-radius: 7px; }

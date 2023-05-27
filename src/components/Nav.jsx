@@ -12,7 +12,7 @@ export const Nav = () => {
 
   const deviceType = () => {
     const payload = {
-      device: window.matchMedia("(min-device-width: 1024px)").matches
+      device: window.matchMedia("(min-device-width: 1025px)").matches
         ? "Desktop"
         : "Mobile",
     };

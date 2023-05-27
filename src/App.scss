@@ -330,9 +330,10 @@ h3 {
   }
 }
 .secondaryBtn {
-  color: $green700;
+  color: $orange700;
+  border-color: $orange700;
   &:hover {
-    filter: hue-rotate(227deg);
+    filter: hue-rotate(-227deg);
   }
 }
 /* Responsiveness */
