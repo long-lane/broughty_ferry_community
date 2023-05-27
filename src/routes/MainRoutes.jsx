@@ -6,8 +6,8 @@ import { FindUs } from "../components/FindUs";
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { GetInvolved } from "../components/GetInvolved";
-
-import { WhatWeDo } from "../components/WhatWeDo";
+import { FerryChats } from "../components/FerryChats";
+import { YouthGaff } from "../components/YouthGaff";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
@@ -20,14 +20,15 @@ export const MainRoutes = () => {
             path="/"
             element={
               <>
-                
                 <Hero />
                 <WhoWeAre />
               </>
             }
           />
           <Route path="/who-we-are" element={<WhoWeAre />} />
-          <Route path="/what-we-do/" element={<WhatWeDo />} />
+          <Route path="/what-we-do/ferry-chats" element={<FerryChats />} />
+          <Route path="/what-we-do/youth-gaff" element={<YouthGaff />} />
+
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/news" element={<News />} />
           <Route path="/find-us" element={<FindUs />} />

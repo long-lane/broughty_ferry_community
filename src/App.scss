@@ -31,7 +31,7 @@ main {
   row-gap: 350px;
   justify-content: space-between;
 }
-.desktopNav {
+.desktop-nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -160,10 +160,16 @@ main {
   }
 }
 .subscription {
+  display: flex;
+  flex-flow: row wrap;
   margin: {
     top: $h;
   }
-  display: flex;
+
+  justify-content: stretch;
+  width: calc(10 *#{$xh});
+  box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
+
   input {
     height: $xh;
     font: {
@@ -171,7 +177,7 @@ main {
       size: $l;
     }
     &[type="email"] {
-      width: calc(4 *#{$phi}*#{$h});
+      width: 70%;
       background-color: transparent;
       border: 2px solid $grey500;
       border-right: none;
@@ -182,8 +188,9 @@ main {
       padding: $m;
     }
     &[type="submit"] {
+      text-align: center;
       cursor: pointer;
-      width: calc(2 *#{$phi}*#{$h});
+      width: 30%;
       border: 2px solid $green700;
       background-color: $green700;
       border: {
@@ -317,6 +324,7 @@ h3 {
 .primaryBtn {
   background-color: $green700;
   color: $grey100;
+  box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
   &:hover {
     background-color: $green800;
   }

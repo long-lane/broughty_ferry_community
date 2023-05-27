@@ -1,5 +1,6 @@
 import React from "react";
 import { NavHashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
 import {
@@ -54,20 +55,10 @@ export const MobileNav = () => {
               </summary>
               <ul>
                 <li>
-                  <NavHashLink
-                    to="/what-we-do"
-                    activeClassName="active"
-                    onClick={toggleMenu}>
-                    ferry chats
-                  </NavHashLink>
+                  <NavLink to="/what-we-do/ferry-chats">ferry chats</NavLink>
                 </li>
                 <li>
-                  <NavHashLink
-                    to="/what-we-do"
-                    activeClassName="active"
-                    onClick={toggleMenu}>
-                    youth gaff
-                  </NavHashLink>
+                  <NavLink to="/what-we-do/youth-gaff">youth gaff</NavLink>
                 </li>
               </ul>
             </details>
@@ -93,10 +84,7 @@ export const MobileNav = () => {
           </li>
           <li>
             <BsChatSquareHeart />
-            <NavHashLink
-              to="/#contact"
-              activeClassName="active"
-              onClick={toggleMenu}>
+            <NavHashLink to="/" activeClassName="active" onClick={toggleMenu}>
               contact
             </NavHashLink>
           </li>

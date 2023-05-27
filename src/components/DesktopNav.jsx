@@ -1,50 +1,37 @@
 import React from "react";
 import { NavHashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.webp";
 
 export const DesktopNav = () => {
   return (
-    <nav className='desktopNav'>
+    <nav className="desktop-nav">
       <NavHashLink to="/">
         <img src={logo} alt="Broughty Ferry Community Logo" />
       </NavHashLink>
       <ul>
         <li>
-          <NavHashLink to="/who-we-are" activeClassName="active">
-            who we are
-          </NavHashLink>
+          <NavHashLink to="/#who-we-are">who we are</NavHashLink>
         </li>
         <li>
           <details>
             <summary>what we do</summary>
             <ul>
               <li>
-                <NavHashLink
-                  to="/what-we-do"
-                  activeClassName="active">
-                  ferry chats
-                </NavHashLink>
+                <NavLink to="/what-we-do/ferry-chats">ferry chats</NavLink>
               </li>
               <li>
-                <NavHashLink
-                  to="/what-we-do"
-                  activeClassName="active">
-                  youth gaff
-                </NavHashLink>
+                <NavLink to="/what-we-do/youth-gaff">youth gaff</NavLink>
               </li>
             </ul>
           </details>
         </li>
         <li>
-          <NavHashLink to="/news" activeClassName="active">
-            news
-          </NavHashLink>
+          <NavLink to="/news">news</NavLink>
         </li>
 
         <li>
-          <NavHashLink to="/get-involved#get-involved" activeClassName="active">
-            get involved
-          </NavHashLink>
+          <NavLink to="/get-involved">get involved</NavLink>
         </li>
       </ul>
       <NavHashLink to="/#contact" className="btn primaryBtn">

@@ -29,12 +29,30 @@
     }
   }
   .hero {
-    row-gap: $xh;
+    row-gap: $h;
     article {
       &:last-of-type {
         img {
           width: 250px;
         }
+      }
+    }
+  }
+  .subscription {
+    row-gap: $m;
+    box-shadow: none;
+    width: 90%;
+    flex-flow: column nowrap;
+    input {
+      border-radius: $xxs;
+
+      &[type="email"] {
+        width: 100%;
+        border: 2px solid $grey500;
+      }
+      &[type="submit"] {
+        width: 100%;
+        box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
       }
     }
   }
@@ -142,23 +160,7 @@
     color: $grey500;
     font-size: $xl;
   }
-  .subscription {
-    flex-flow: column wrap;
-    align-items: center;
-    row-gap: $m;
-    input {
-      &[type="email"] {
-        border: 2px solid $grey500;
-        border-radius: $xxs;
-        width: 250px;
-      }
-      &[type="submit"] {
-        border: 2px solid $green700;
-        border-radius: $xxs;
-        width: 250px;
-      }
-    }
-  }
+
   .whoWeAre {
     flex-flow: column-reverse wrap;
     row-gap: $xh;

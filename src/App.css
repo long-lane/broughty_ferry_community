@@ -54,43 +54,43 @@ main {
   row-gap: 350px;
   justify-content: space-between; }
 
-.desktopNav {
+.desktop-nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: baseline;
   font-size: 20px; }
-  .desktopNav img {
+  .desktop-nav img {
     width: 120px;
     height: 120px; }
-  .desktopNav ul {
+  .desktop-nav ul {
     flex: 1 1 auto;
     justify-content: center;
     text-transform: capitalize;
     display: flex;
     column-gap: 48px;
     list-style-type: none; }
-    .desktopNav ul a {
+    .desktop-nav ul a {
       text-decoration: none; }
-      .desktopNav ul a:hover {
+      .desktop-nav ul a:hover {
         color: #44a66a; }
-    .desktopNav ul li:last-of-type, .desktopNav ul li:nth-of-type(2) {
+    .desktop-nav ul li:last-of-type, .desktop-nav ul li:nth-of-type(2) {
       min-width: 12ch; }
-    .desktopNav ul details summary {
+    .desktop-nav ul details summary {
       list-style-type: none;
       cursor: pointer; }
-      .desktopNav ul details summary:hover {
+      .desktop-nav ul details summary:hover {
         color: #44a66a; }
-      .desktopNav ul details summary::before {
+      .desktop-nav ul details summary::before {
         content: "\002b";
         padding-right: 7px; }
-    .desktopNav ul details[open] summary::before {
+    .desktop-nav ul details[open] summary::before {
       content: "\2212"; }
-    .desktopNav ul details ul {
+    .desktop-nav ul details ul {
       flex-flow: column;
       row-gap: 7px;
       padding-top: 7px; }
-      .desktopNav ul details ul li {
+      .desktop-nav ul details ul li {
         padding-left: 16px; }
 
 .mobile-nav-active,
@@ -128,14 +128,18 @@ main {
         width: 350px; }
 
 .subscription {
+  display: flex;
+  flex-flow: row wrap;
   margin-top: 48px;
-  display: flex; }
+  justify-content: stretch;
+  width: calc(10 *60px);
+  box-shadow: 0 0 18px 7px rgba(21, 144, 69, 0.2); }
   .subscription input {
     height: 60px;
     font-family: "Poppins Light";
     font-size: 18px; }
     .subscription input[type="email"] {
-      width: calc(4 *1.618*48px);
+      width: 70%;
       background-color: transparent;
       border: 2px solid #adb5bd;
       border-right: none;
@@ -143,8 +147,9 @@ main {
       border-bottom-left-radius: 7px;
       padding: 16px; }
     .subscription input[type="submit"] {
+      text-align: center;
       cursor: pointer;
-      width: calc(2 *1.618*48px);
+      width: 30%;
       border: 2px solid #44a66a;
       background-color: #44a66a;
       border-top-right-radius: 7px;
@@ -238,7 +243,8 @@ h3 {
 
 .primaryBtn {
   background-color: #44a66a;
-  color: #f8f9fa; }
+  color: #f8f9fa;
+  box-shadow: 0 0 18px 7px rgba(21, 144, 69, 0.2); }
   .primaryBtn:hover {
     background-color: #2c9b58; }
 
@@ -250,16 +256,84 @@ h3 {
 /* Responsiveness */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   header {
-    row-gap: 48px; }
+    row-gap: 48px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    box-shadow: 0 7px 48px 0 rgba(173, 181, 189, 0.2); }
 
   .hero {
     row-gap: 60px; }
 
-  .desktopNav {
-    display: none; }
+  .mobile-nav-active {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    row-gap: 30px;
+    padding-bottom: 48px;
+    font-size: 20px; }
+    .mobile-nav-active div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .mobile-nav-active div a {
+        font-family: "Poppins Bold";
+        color: #f58b64;
+        text-decoration: none; }
+        .mobile-nav-active div a::after {
+          content: "C";
+          color: #73bc8f; }
+    .mobile-nav-active ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: column wrap;
+      row-gap: 14px; }
+      .mobile-nav-active ul li {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 14px; }
+        .mobile-nav-active ul li a {
+          text-decoration: none; }
+          .mobile-nav-active ul li a::first-letter {
+            text-transform: capitalize; }
+      .mobile-nav-active ul details ::first-letter {
+        text-transform: capitalize; }
+      .mobile-nav-active ul details summary {
+        list-style-type: none;
+        display: inline-flex;
+        column-gap: 14px;
+        align-items: center; }
+      .mobile-nav-active ul details ul {
+        display: flex;
+        row-gap: 14px;
+        margin-top: 7px;
+        margin-left: 48px; }
 
-  .mobileNav {
-    display: flex; }
+  .mobile-nav-inactive {
+    display: flex;
+    justify-content: flex-end; }
+    .mobile-nav-inactive ul {
+      display: none; }
+    .mobile-nav-inactive div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .mobile-nav-inactive a {
+      font-family: "Poppins Bold";
+      color: #f58b64;
+      text-decoration: none; }
+      .mobile-nav-inactive a::after {
+        content: "C";
+        color: #73bc8f; }
+
+  .nav-icons {
+    color: #adb5bd;
+    font-size: 20px; }
 
   .whoWeAre {
     flex-flow: column-reverse wrap;
@@ -295,9 +369,23 @@ h3 {
     font-size: 30px; }
 
   .hero {
-    row-gap: 60px; }
+    row-gap: 48px; }
     .hero article:last-of-type img {
       width: 250px; }
+
+  .subscription {
+    row-gap: 16px;
+    box-shadow: none;
+    width: 90%;
+    flex-flow: column nowrap; }
+    .subscription input {
+      border-radius: 7px; }
+      .subscription input[type="email"] {
+        width: 100%;
+        border: 2px solid #adb5bd; }
+      .subscription input[type="submit"] {
+        width: 100%;
+        box-shadow: 0 0 18px 7px rgba(21, 144, 69, 0.2); }
 
   .desktopNav {
     display: none; }
@@ -368,19 +456,6 @@ h3 {
   .nav-icons {
     color: #adb5bd;
     font-size: 20px; }
-
-  .subscription {
-    flex-flow: column wrap;
-    align-items: center;
-    row-gap: 16px; }
-    .subscription input[type="email"] {
-      border: 2px solid #adb5bd;
-      border-radius: 7px;
-      width: 250px; }
-    .subscription input[type="submit"] {
-      border: 2px solid #44a66a;
-      border-radius: 7px;
-      width: 250px; }
 
   .whoWeAre {
     flex-flow: column-reverse wrap;

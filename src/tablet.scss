@@ -1,16 +1,121 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  header {
+    header {
     row-gap: $h;
+    padding: $xl;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    background-color: $grey100;
+    border-bottom: 2px solid $grey200;
+    box-shadow: 0 $xxs $h 0 rgba($grey500, $alpha: 0.2);
   }
-  .hero {
+  .hero{
     row-gap: $xh;
   }
-  .desktopNav {
-    display: none;
+  .mobile-nav-active {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    row-gap: $xxl;
+    padding: {
+      bottom: $h;
+    }
+    div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      a {
+        font: {
+          family: "Poppins Bold";
+        }
+        color: $orange600;
+        &::after {
+          content: "C";
+          color: $green500;
+        }
+        text-decoration: none;
+      }
+    }
+    font: {
+      size: $xl;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: column wrap;
+      row-gap: $s;
+
+      li {
+        display: inline-flex;
+        align-items: center;
+
+        column-gap: $s;
+        a {
+          &::first-letter {
+            text-transform: capitalize;
+          }
+          text: {
+            decoration: none;
+          }
+        }
+      }
+      details {
+        ::first-letter {
+          text-transform: capitalize;
+        }
+        summary {
+          list-style-type: none;
+          display: inline-flex;
+          column-gap: $s;
+          align-items: center;
+        }
+        ul {
+          display: flex;
+
+          row-gap: $s;
+          margin: {
+            top: $xxs;
+            left: $h;
+          }
+        }
+      }
+    }
   }
-  .mobileNav{
-    display:flex;
+  .mobile-nav-inactive {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      display: none;
+    }
+    div {
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    a {
+      font: {
+        family: "Poppins Bold";
+      }
+      color: $orange600;
+      &::after {
+        content: "C";
+        color: $green500;
+      }
+      text-decoration: none;
+    }
   }
+  .nav-icons {
+    color: $grey500;
+    font-size: $xl;
+  }
+
+  
+
   .whoWeAre {
     flex-flow: column-reverse wrap;
     row-gap: $xh;
