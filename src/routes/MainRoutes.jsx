@@ -23,6 +23,7 @@ export const MainRoutes = () => {
               <>
                 <Hero />
                 <WhoWeAre />
+                <FerryChats props={{ showBtn: true, showMap: false, showMeetings : false }} />
               </>
             }
           />
@@ -32,7 +33,7 @@ export const MainRoutes = () => {
           />
           <Route
             path="/broughty_ferry_community/what-we-do/ferry-chats"
-            element={<FerryChats />}
+            element={<FerryChats props={{ showBtn: false, showMap: true, showMeetings : true }} />}
           />
           <Route
             path="/broughty_ferry_community/what-we-do/youth-gaff"

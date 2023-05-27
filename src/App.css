@@ -252,19 +252,17 @@ footer {
       .ferry-chats article:first-of-type img {
         width: 550px; }
     .ferry-chats article:last-of-type {
-      flex-flow: row wrap;
-      row-gap: 18px; }
-      .ferry-chats article:last-of-type h3 {
-        flex: 1 1 100%; }
-      .ferry-chats article:last-of-type a {
+      flex-flow: column nowrap;
+      row-gap: 18px;
+      align-items: flex-start; }
+      .ferry-chats article:last-of-type p a {
         padding-left: 7px;
         text-decoration: none;
         color: #f47a4e; }
       .ferry-chats article:last-of-type iframe {
         margin-top: 60px;
         border: none;
-        flex: 1 1 100%;
-        height: 250px; }
+        width: 100%; }
 
 .youth-gaff {
   display: none; }

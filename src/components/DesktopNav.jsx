@@ -1,17 +1,17 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.webp";
 ``
 export const DesktopNav = () => {
   return (
     <nav className="desktop-nav">
-      <NavHashLink to="/broughty_ferry_community/">
+      <NavLink to="/broughty_ferry_community/">
         <img src={logo} alt="Broughty Ferry Community Logo" />
-      </NavHashLink>
+      </NavLink>
       <ul>
         <li>
-          <NavHashLink to="/broughty_ferry_community/#who-we-are">who we are</NavHashLink>
+          <HashLink to="/broughty_ferry_community/#who-we-are">who we are</HashLink>
         </li>
         <li>
           <details>
@@ -34,9 +34,9 @@ export const DesktopNav = () => {
           <NavLink to="/broughty_ferry_community/get-involved">get involved</NavLink>
         </li>
       </ul>
-      <NavHashLink to="/broughty_ferry_community/#contact" className="btn primaryBtn">
+      <HashLink to="/broughty_ferry_community/#contact" className="btn primaryBtn">
         contact
-      </NavHashLink>
+      </HashLink>
     </nav>
   );
 };

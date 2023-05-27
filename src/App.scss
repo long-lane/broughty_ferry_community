@@ -337,26 +337,27 @@ footer {
       }
     }
     &:last-of-type {
-      flex-flow: row wrap;
+      flex-flow: column nowrap;
       row-gap: $l;
-      h3 {
-        flex: 1 1 100%;
-      }
-      a {
-        padding: {
+      align-items: flex-start;
+      
+      p{a {
+        
+          padding: {
           left: $xxs;
         }
         text: {
           decoration: none;
         }
         color: $orange700;
-      }
+      
+      }}
 
       iframe {
         margin-top: $xh;
         border: none;
-        flex: 1 1 100%;
-        height: 250px;
+        // flex: 1 1 100%;
+       width: 100%;
         
       }
     }
