@@ -17,7 +17,7 @@ export const WhoWeAre = () => {
           then a Management Group. We are at the stage of applying for charity
           registration.
         </p>
-        <NavLink className='btn secondaryBtn' to="/get-involved">get involved</NavLink>
+        <NavLink className='btn secondaryBtn' to="/broughty_ferry_community/get-involved">get involved</NavLink>
       </article>
     </section>
   );
