@@ -276,6 +276,55 @@ footer {
   .youth-gaff article:first-of-type img {
     width: 250px; }
 
+.meetings {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 16px; }
+  .meetings h3 {
+    color: #495057; }
+  .meetings p::first-letter {
+    text-transform: capitalize; }
+  .meetings div {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    column-gap: 48px; }
+    .meetings div article {
+      flex: 0 0 25%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      row-gap: 16px;
+      padding: 30px;
+      border: 2px solid #dee2e6;
+      border-radius: 7px; }
+      .meetings div article img {
+        width: 100%; }
+      .meetings div article h4 {
+        color: #5bb17d;
+        font-size: 30px; }
+      .meetings div article time {
+        font-size: 16px;
+        color: #adb5bd; }
+      .meetings div article p {
+        font-size: 16px; }
+      .meetings div article h5 {
+        flex: 1 0 100%;
+        text-transform: capitalize; }
+      .meetings div article ul {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 0;
+        list-style-type: none;
+        line-height: 20px; }
+        .meetings div article ul li a {
+          text-decoration: none;
+          font-size: 14px;
+          color: #f15922; }
+
 h1 {
   font-size: 48px;
   font-family: "Poppins Bold";
@@ -615,6 +664,9 @@ h3 {
   .youth-gaff {
     flex-flow: column-reverse wrap; }
     .youth-gaff article:first-of-type img {
-      width: 150px; } }
+      width: 150px; }
+
+  .meetings div article {
+    flex: 1 1 100%; } }
 
 /*# sourceMappingURL=App.css.map */
