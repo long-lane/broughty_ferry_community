@@ -386,7 +386,8 @@ footer {
   overflow: hidden;
   row-gap: $m;
   position: relative;
-  
+    
+
   h3 {
     color: $grey700;
   }
@@ -410,11 +411,11 @@ footer {
     cursor: pointer;
     opacity: 0.5;
     &:first-of-type {
-      left: 0;
+      left: 3%;
       top: 50%;
     }
     &:last-of-type {
-      right: 0;
+      right: 3%;
       top: 50%;
     }
     &:hover{

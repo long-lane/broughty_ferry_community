@@ -305,10 +305,10 @@ footer {
     cursor: pointer;
     opacity: 0.5; }
     .meetings span:first-of-type {
-      left: 0;
+      left: 3%;
       top: 50%; }
     .meetings span:last-of-type {
-      right: 0;
+      right: 3%;
       top: 50%; }
     .meetings span:hover {
       opacity: 1; }
