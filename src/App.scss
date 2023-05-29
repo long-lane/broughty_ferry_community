@@ -379,7 +379,9 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  row-gap:$m;
+  overflow: hidden;
+  row-gap: $m;
+  position: relative;
   
   h3 {
     color: $grey700;
@@ -391,16 +393,43 @@ footer {
       }
     }
   }
-  div{
+  span {
+    position: absolute;
+    display: inline-flex;
+    padding: $s;
+    border-radius: 50%;
+    width: $xh;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange200;
+    cursor: pointer;
+    &:first-of-type {
+      left: 0;
+      top: 50%;
+    }
+    &:last-of-type {
+      right: 0;
+      top: 50%;
+    }
+  }
+  div {
     margin-top: $xh;
     display: flex;
     flex-flow: row nowrap;
     overflow-x: scroll;
-    column-gap: $l;
+    column-gap: $m;
+    width: 80%;
+    padding: {
+      left: $m;
+      right: $m;
+    }
+
     @include hideScrollBar;
-    article{
-      flex: 0 0 25%;
-      display:flex;
+    article {
+      flex: 1 0 30%;
+
+      display: flex;
       flex-flow: row wrap;
       align-items: baseline;
       justify-content: space-between;
@@ -408,55 +437,53 @@ footer {
       padding: $xxl;
       border: 2px solid $grey300;
       border-radius: $xxs;
-      
-      img{
-        width: 100%;
-        
+      scroll-snap: {
+        align: center;
+        stop: always;
       }
-      h4{
+      img {
+        width: 100%;
+      }
+      h4 {
         color: $green600;
-        font:{
+        font: {
           size: $xxl;
         }
       }
-      time{
-        font:{
+      time {
+        font: {
           size: $m;
         }
         color: $grey500;
       }
-      p{
-        font:{
+      p {
+        font: {
           size: $m;
         }
       }
-      
-      h5{
+
+      h5 {
         flex: 1 0 100%;
         text-transform: capitalize;
       }
-      ul{
-        display:flex;
+      ul {
+        display: flex;
         flex-flow: column nowrap;
-        row-gap:0;
+        row-gap: 0;
         list-style-type: none;
         line-height: $xl;
-        li{
-          
-          a{
-            
-            text:{
-              decoration:none;
+        li {
+          a {
+            text: {
+              decoration: none;
             }
-            font:{
+            font: {
               size: $s;
             }
             color: $orange900;
           }
         }
       }
-      
-
     }
   }
 }

@@ -280,17 +280,39 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  row-gap: 16px; }
+  overflow: hidden;
+  row-gap: 16px;
+  position: relative; }
   .meetings h3 {
     color: #495057; }
   .meetings p::first-letter {
     text-transform: capitalize; }
+  .meetings span {
+    position: absolute;
+    display: inline-flex;
+    padding: 14px;
+    border-radius: 50%;
+    width: 60px;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcded3;
+    cursor: pointer; }
+    .meetings span:first-of-type {
+      left: 0;
+      top: 50%; }
+    .meetings span:last-of-type {
+      right: 0;
+      top: 50%; }
   .meetings div {
     margin-top: 60px;
     display: flex;
     flex-flow: row nowrap;
     overflow-x: scroll;
-    column-gap: 18px;
+    column-gap: 16px;
+    width: 80%;
+    padding-left: 16px;
+    padding-right: 16px;
     /* Hide scrollbar for Chrome, Safari and Opera */
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;
@@ -300,7 +322,7 @@ footer {
     .meetings div::-webkit-scrollbar {
       display: none; }
     .meetings div article {
-      flex: 0 0 25%;
+      flex: 1 0 30%;
       display: flex;
       flex-flow: row wrap;
       align-items: baseline;
@@ -308,7 +330,9 @@ footer {
       row-gap: 16px;
       padding: 30px;
       border: 2px solid #dee2e6;
-      border-radius: 7px; }
+      border-radius: 7px;
+      scroll-snap-align: center;
+      scroll-snap-stop: always; }
       .meetings div article img {
         width: 100%; }
       .meetings div article h4 {
@@ -513,20 +537,12 @@ h3 {
     .youth-gaff article:first-of-type img {
       width: 250px; }
 
+  .meetings span {
+    display: none; }
   .meetings div {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    justify-content: space-between;
-    column-gap: 12px;
-    width: 95vw;
-    border-radius: 0;
-    padding-left: 14px;
-    padding-right: 14px; }
+    padding: 0;
+    width: 90vw; }
     .meetings div article {
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
       flex: 1 0 66%; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   #root {
@@ -690,20 +706,12 @@ h3 {
     .youth-gaff article:first-of-type img {
       width: 150px; }
 
+  .meetings span {
+    display: none; }
   .meetings div {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    justify-content: space-between;
-    column-gap: 12px;
-    width: 95vw;
-    border-radius: 0;
-    padding-left: 14px;
-    padding-right: 14px; }
+    padding: 0;
+    width: 90vw; }
     .meetings div article {
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
       flex: 1 0 100%; } }
 
 /*# sourceMappingURL=App.css.map */

@@ -249,28 +249,15 @@
     }
   }
 
-  .meetings{
-    
+  .meetings {
+    span{
+      display: none;
+    }
     div{
-      display: flex;
-      flex-flow: row nowrap;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      justify-content: space-between;
-      column-gap: $xs;
-      width: 95vw;
-      border-radius: 0;
-      padding: {
-        left: $s;
-        right: $s;
-      }  
+      padding:0;
+      width:90vw;
       article{
-        scroll-snap: {
-          align: center;
-          stop: always;
-        }
         flex: 1 0 100%;
-        
       }
     }
   }
