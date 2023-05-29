@@ -12,9 +12,9 @@ body {
     bottom: $h;
   }
   background-color: $grey100;
-  border: 2px solid $grey200;
+  border: 2px solid $orange100;
   border-radius: $xxs;
-
+  box-shadow: 0 $m $m $xxs rgba($orange700, $alpha: 0.2);
   font: {
     family: "Poppins Light";
     size: $xl;
