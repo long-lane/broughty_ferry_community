@@ -36,7 +36,7 @@ header {
 }
 
 main {
-  padding: $xh;
+  
   display: flex;
   flex-flow: column nowrap;
   row-gap: 350px;
@@ -190,6 +190,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   column-gap: $h;
+  padding: $xh;
   article {
     flex: 1 1 40%;
     display: flex;
@@ -281,10 +282,13 @@ footer {
   }
 }
 
-.whoWeAre {
+
+.who-we-are {
+  padding: {top:$xh; right:$xh; left:$xh;}
   display: flex;
   flex-flow: row wrap;
   column-gap: $h;
+  background-color: $orange100;
   article {
     display: flex;
     flex: 1 1 40%;

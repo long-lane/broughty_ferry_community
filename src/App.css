@@ -57,7 +57,6 @@ header {
   justify-content: space-between; }
 
 main {
-  padding: 60px;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 350px;
@@ -153,7 +152,8 @@ footer {
 .hero {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 48px; }
+  column-gap: 48px;
+  padding: 60px; }
   .hero article {
     flex: 1 1 40%;
     display: flex;
@@ -211,20 +211,24 @@ footer {
       .subscription input[type="submit"]:hover {
         background-color: #2c9b58; }
 
-.whoWeAre {
+.who-we-are {
+  padding-top: 60px;
+  padding-right: 60px;
+  padding-left: 60px;
   display: flex;
   flex-flow: row wrap;
-  column-gap: 48px; }
-  .whoWeAre article {
+  column-gap: 48px;
+  background-color: #feeee9; }
+  .who-we-are article {
     display: flex;
     flex: 1 1 40%; }
-    .whoWeAre article:first-of-type {
+    .who-we-are article:first-of-type {
       justify-content: center;
       background-image: url("./assets/img/who_we_are_bkg.svg");
       background-repeat: no-repeat; }
-      .whoWeAre article:first-of-type img {
+      .who-we-are article:first-of-type img {
         width: 350px; }
-    .whoWeAre article:last-of-type {
+    .who-we-are article:last-of-type {
       flex-flow: column wrap;
       row-gap: 18px;
       align-items: flex-start; }
@@ -515,15 +519,20 @@ h3 {
     color: #adb5bd;
     font-size: 20px; }
 
-  .whoWeAre {
+  .who-we-are {
     flex-flow: column-reverse wrap;
     row-gap: 60px; }
-    .whoWeAre article:first-of-type img {
+    .who-we-are article:first-of-type img {
       width: 250px; }
+    .who-we-are article:last-of-type p {
+      max-width: 45ch; }
 
   .ferry-chats,
   .youth-gaff {
-    row-gap: 48px; }
+    row-gap: 48px;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 60px; }
     .ferry-chats article:last-of-type,
     .youth-gaff article:last-of-type {
       flex-flow: column nowrap;
@@ -537,8 +546,10 @@ h3 {
 
   .youth-gaff {
     flex-flow: column-reverse wrap; }
-    .youth-gaff article:first-of-type img {
-      width: 250px; }
+    .youth-gaff article:first-of-type {
+      background-size: 350px; }
+      .youth-gaff article:first-of-type img {
+        width: 250px; }
 
   .meetings span {
     display: none; }
@@ -565,10 +576,6 @@ h3 {
     box-shadow: 0 7px 48px 0 rgba(173, 181, 189, 0.2); }
 
   main {
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 0;
     row-gap: 150px; }
 
   footer {
@@ -592,7 +599,10 @@ h3 {
     font-size: 30px; }
 
   .hero {
-    row-gap: 48px; }
+    row-gap: 48px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-left: 18px; }
     .hero article:last-of-type img {
       width: 250px; }
 
@@ -684,15 +694,21 @@ h3 {
     color: #adb5bd;
     font-size: 20px; }
 
-  .whoWeAre {
+  .who-we-are {
     flex-flow: column-reverse wrap;
-    row-gap: 60px; }
-    .whoWeAre article:first-of-type img {
+    row-gap: 60px;
+    padding-top: 60px;
+    padding-right: 18px;
+    padding-left: 18px; }
+    .who-we-are article:first-of-type img {
       width: 250px; }
 
   .ferry-chats,
   .youth-gaff {
     flex-flow: column nowrap;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-left: 18px;
     row-gap: 48px; }
     .ferry-chats article:first-of-type img,
     .youth-gaff article:first-of-type img {

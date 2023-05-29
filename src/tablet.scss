@@ -148,13 +148,19 @@
     font-size: $xl;
   }
 
-  .whoWeAre {
+  .who-we-are {
     flex-flow: column-reverse wrap;
     row-gap: $xh;
+
     article {
       &:first-of-type {
         img {
           width: 250px;
+        }
+      }
+      &:last-of-type {
+        p {
+          max-width: 45ch;
         }
       }
     }
@@ -163,11 +169,14 @@
   .ferry-chats,
   .youth-gaff {
     row-gap: $h;
+           padding: {
+          top: $xh;
+          right: $xh;
+          left: $xh;
+        }
     article {
       &:last-of-type {
         flex-flow: column nowrap;
-        // row-gap: $h;
-        // background-color: red;
 
         flex: 1 1 100%;
         p {
@@ -186,18 +195,20 @@
         img {
           width: 250px;
         }
+        background-size: 350px;
+
       }
     }
   }
 
   .meetings {
-    span{
+    span {
       display: none;
     }
-    div{
-      padding:0;
-      width:90vw;
-      article{
+    div {
+      padding: 0;
+      width: 90vw;
+      article {
         flex: 1 0 66%;
       }
     }
