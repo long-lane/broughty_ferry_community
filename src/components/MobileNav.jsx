@@ -96,7 +96,7 @@ export const MobileNav = () => {
           <li>
             <BsChatSquareHeart />
             <HashLink
-              to="/broughty_ferry_community/#contact"
+              to="#contact"
               onClick={toggleMenu}>
               contact
             </HashLink>
