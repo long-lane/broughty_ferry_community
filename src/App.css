@@ -297,13 +297,16 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #fcded3;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.5; }
     .meetings span:first-of-type {
       left: 0;
       top: 50%; }
     .meetings span:last-of-type {
       right: 0;
       top: 50%; }
+    .meetings span:hover {
+      opacity: 1; }
   .meetings div {
     margin-top: 60px;
     display: flex;
