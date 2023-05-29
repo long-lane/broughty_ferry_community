@@ -380,7 +380,7 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   row-gap:$m;
-
+  
   h3 {
     color: $grey700;
   }
@@ -396,7 +396,8 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     overflow-x: scroll;
-    column-gap: $h;
+    column-gap: $l;
+    @include hideScrollBar;
     article{
       flex: 0 0 25%;
       display:flex;

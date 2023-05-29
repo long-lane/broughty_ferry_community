@@ -250,9 +250,27 @@
   }
 
   .meetings{
+    
     div{
+      display: flex;
+      flex-flow: row nowrap;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      justify-content: space-between;
+      column-gap: $xs;
+      width: 95vw;
+      border-radius: 0;
+      padding: {
+        left: $s;
+        right: $s;
+      }  
       article{
-        flex: 1 1 100%;
+        scroll-snap: {
+          align: center;
+          stop: always;
+        }
+        flex: 1 0 100%;
+        
       }
     }
   }
