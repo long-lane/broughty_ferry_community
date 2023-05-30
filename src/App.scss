@@ -12,9 +12,9 @@ body {
     bottom: $h;
   }
   background-color: $grey100;
-  border: 2px solid $orange100;
+  border: 2px solid $grey200;
   border-radius: $xxs;
-  box-shadow: 0 $m $m $xxs rgba($orange700, $alpha: 0.2);
+  box-shadow: 0 $m $m $xxs rgba($grey500, $alpha: 0.2);
   font: {
     family: "Poppins Light";
     size: $xl;
@@ -394,7 +394,7 @@ footer {
   overflow: hidden;
   row-gap: $m;
   position: relative;
-
+  padding-top: $xh;
   h3 {
     color: $grey700;
   }

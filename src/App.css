@@ -39,9 +39,9 @@ body {
   margin-top: 48px;
   margin-bottom: 48px;
   background-color: #f8f9fa;
-  border: 2px solid #feeee9;
+  border: 2px solid #e9ecef;
   border-radius: 7px;
-  box-shadow: 0 16px 16px 7px rgba(244, 122, 78, 0.2);
+  box-shadow: 0 16px 16px 7px rgba(173, 181, 189, 0.2);
   font-family: "Poppins Light";
   font-size: 20px;
   width: 1500px;
@@ -290,7 +290,8 @@ footer {
   align-items: center;
   overflow: hidden;
   row-gap: 16px;
-  position: relative; }
+  position: relative;
+  padding-top: 60px; }
   .meetings h3 {
     color: #495057; }
   .meetings p::first-letter {
