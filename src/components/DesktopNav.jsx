@@ -34,7 +34,7 @@ export const DesktopNav = () => {
           <NavLink to="/broughty_ferry_community/get-involved">get involved</NavLink>
         </li>
       </ul>
-      <HashLink to="#contact" className="btn primaryBtn">
+      <HashLink to="#contact" className="btn secondaryBtn">
         contact
       </HashLink>
     </nav>

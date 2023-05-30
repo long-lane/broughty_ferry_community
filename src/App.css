@@ -145,6 +145,8 @@ footer {
       padding-top: 7px; }
       .desktop-nav ul details ul li {
         padding-left: 16px; }
+  .desktop-nav a[class="btn secondaryBtn"] {
+    margin-top: 0; }
 
 .mobile-nav-active,
 .mobile-nav-inactive {
