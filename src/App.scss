@@ -449,21 +449,16 @@ footer {
       align-items: baseline;
       justify-content: space-between;
       row-gap: $l;
+      padding: $m;
 
       border: 2px solid $grey300;
+      border-top: $xxs solid $orange500;
       border-radius: $xxs;
       scroll-snap: {
         align: center;
         stop: always;
       }
-      img {
-        width: 100%;
-        
-        border-top: {
-          left-radius: $xxs;
-          right-radius: $xxs;
-        }
-      }
+     
       h4 {
         color: $grey700;
         font: {
@@ -493,7 +488,7 @@ footer {
       h5 {
         flex: 1 0 100%;
         text-transform: capitalize;
-        margin-top: $h;
+        margin-top: $l;
         color: $grey700;
       }
       ul {
@@ -504,7 +499,7 @@ footer {
         list-style-type: none;
         line-height: $xl;
         padding: {
-          bottom: $h;
+          bottom: $l;
         }
 
         li {

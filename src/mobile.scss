@@ -274,10 +274,14 @@
     span {
       display: none;
     }
-    
+
     div {
       width: 90vw;
       article {
+        img {
+          display: none;
+        }
+
         flex: 1 0 100%;
       }
     }

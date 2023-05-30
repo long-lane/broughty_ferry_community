@@ -182,7 +182,7 @@ export const Meetings = () => {
         {meetings.map((meeting) => {
           return (
             <article key={meeting.meetingDate}>
-              <img src={meeting.img} alt={meeting.alt} loading="lazy" />
+              {/* <img src={meeting.img} alt={meeting.alt} loading="lazy" /> */}
               <h4>{meeting.title}</h4>
               <time dateTime={meeting.meetingDate}>
                 {" "}
