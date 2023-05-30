@@ -8,7 +8,7 @@ export const Meetings = () => {
       img: fraud,
       alt: "alt text for image",
       title: "Scams",
-      text: "On this session we found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
+      text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
       links: [
         {
           linkText: "Trading Standards in Scotland",
@@ -39,7 +39,7 @@ export const Meetings = () => {
       img: fraud,
       alt: "alt text for image",
       title: "Scams",
-      text: "On this session we found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
+      text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
       links: [
         {
           linkText: "Trading Standards in Scotland",
@@ -70,7 +70,7 @@ export const Meetings = () => {
       img: fraud,
       alt: "alt text for image",
       title: "Scams",
-      text: "On this session we found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
+      text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
       links: [
         {
           linkText: "Trading Standards in Scotland",
@@ -101,7 +101,7 @@ export const Meetings = () => {
       img: fraud,
       alt: "alt text for image",
       title: "Scams",
-      text: "On this session we found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
+      text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
       links: [
         {
           linkText: "Trading Standards in Scotland",
@@ -132,7 +132,7 @@ export const Meetings = () => {
       img: fraud,
       alt: "alt text for image",
       title: "Scams",
-      text: "On this session we found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
+      text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
       links: [
         {
           linkText: "Trading Standards in Scotland",
@@ -162,16 +162,14 @@ export const Meetings = () => {
   const carousel = useRef();
   const swipe = (ev) => {
     const swipeDirection =
-      (ev.target.dataset.direction ||
-      ev.target.closest('span').dataset.direction);
+      ev.target.dataset.direction ||
+      ev.target.closest("span").dataset.direction;
 
     carousel.current.scroll({
       top: 0,
-      left: (swipeDirection === 'left' ? -1000 : 1000),
+      left: swipeDirection === "left" ? -1000 : 1000,
       behavior: "smooth",
-    })
-console.log((swipeDirection === 'left' ? -550 : 550))
-    
+    });
   };
   return (
     <section className="meetings">

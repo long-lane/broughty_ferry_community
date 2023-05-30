@@ -444,13 +444,12 @@ footer {
     @include hideScrollBar;
     article {
       flex: 1 0 30%;
-
       display: flex;
       flex-flow: row wrap;
       align-items: baseline;
       justify-content: space-between;
-      row-gap: $m;
-      padding: $xxl;
+      row-gap: $l;
+
       border: 2px solid $grey300;
       border-radius: $xxs;
       scroll-snap: {
@@ -459,6 +458,10 @@ footer {
       }
       img {
         width: 100%;
+        border-top: {
+          left-radius: $xxs;
+          right-radius: $xxs;
+        }
       }
       h4 {
         color: $green600;
@@ -470,9 +473,17 @@ footer {
         font: {
           size: $m;
         }
-        color: $grey500;
+        color: $grey600;
+        flex: 1 0 100%;
+        margin: {
+          top: -$l;
+        }
       }
       p {
+        border-top: 2px solid $grey200;
+        padding: {
+          top: $m;
+        }
         font: {
           size: $m;
         }
@@ -481,13 +492,21 @@ footer {
       h5 {
         flex: 1 0 100%;
         text-transform: capitalize;
+        margin-top: $h;
+        color: $orange700;
       }
       ul {
         display: flex;
+        flex: 1 0 100%;
         flex-flow: column nowrap;
         row-gap: 0;
         list-style-type: none;
         line-height: $xl;
+        padding: {
+          
+          bottom: $h;
+        }
+        
         li {
           a {
             text: {
@@ -498,6 +517,16 @@ footer {
             }
             color: $orange900;
           }
+        }
+      }
+      h4,
+      h5,
+      time,
+      p,
+      ul {
+        padding: {
+          left: $m;
+          right: $m;
         }
       }
     }
