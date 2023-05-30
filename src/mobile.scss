@@ -278,10 +278,7 @@
     div {
       width: 90vw;
       article {
-        img {
-          display: none;
-        }
-
+        padding: $m;
         flex: 1 0 100%;
       }
     }

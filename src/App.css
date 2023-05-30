@@ -340,7 +340,7 @@ footer {
       align-items: baseline;
       justify-content: space-between;
       row-gap: 18px;
-      padding: 16px;
+      padding: 18px;
       border: 2px solid #fcded3;
       border-top: 7px solid #f79b7a;
       border-radius: 7px;
@@ -375,13 +375,6 @@ footer {
           text-decoration: none;
           font-size: 14px;
           color: #f15922; }
-      .meetings div article h4,
-      .meetings div article h5,
-      .meetings div article time,
-      .meetings div article p,
-      .meetings div article ul {
-        padding-left: 16px;
-        padding-right: 16px; }
 
 h1 {
   font-size: 48px;
@@ -576,7 +569,7 @@ h3 {
     padding: 0;
     width: 90vw; }
     .meetings div article {
-      flex: 1 0 66%; }
+      flex: 1 0 50%; }
       .meetings div article p {
         max-width: 45ch; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
@@ -756,8 +749,7 @@ h3 {
     .meetings div {
       width: 90vw; }
       .meetings div article {
-        flex: 1 0 100%; }
-        .meetings div article img {
-          display: none; } }
+        padding: 16px;
+        flex: 1 0 100%; } }
 
 /*# sourceMappingURL=App.css.map */

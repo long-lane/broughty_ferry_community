@@ -449,7 +449,7 @@ footer {
       align-items: baseline;
       justify-content: space-between;
       row-gap: $l;
-      padding: $m;
+      padding: $l;
 
       border: 2px solid $orange200;
       border-top: $xxs solid $orange500;
@@ -514,16 +514,7 @@ footer {
           }
         }
       }
-      h4,
-      h5,
-      time,
-      p,
-      ul {
-        padding: {
-          left: $m;
-          right: $m;
-        }
-      }
+
     }
   }
 }
