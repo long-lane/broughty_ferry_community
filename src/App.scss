@@ -36,7 +36,6 @@ header {
 }
 
 main {
-  
   display: flex;
   flex-flow: column nowrap;
   row-gap: 350px;
@@ -208,6 +207,9 @@ footer {
           }
         }
         color: $green600;
+        margin: {
+          bottom: -$l;
+        }
       }
       p {
         font: {
@@ -282,9 +284,12 @@ footer {
   }
 }
 
-
 .who-we-are {
-  padding: {top:$xh; right:$xh; left:$xh;}
+  padding: {
+    top: $xh;
+    right: $xh;
+    left: $xh;
+  }
   display: flex;
   flex-flow: row wrap;
   column-gap: $h;
@@ -386,7 +391,6 @@ footer {
   overflow: hidden;
   row-gap: $m;
   position: relative;
-    
 
   h3 {
     color: $grey700;
@@ -418,7 +422,7 @@ footer {
       right: 3%;
       top: 50%;
     }
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }

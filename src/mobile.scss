@@ -68,6 +68,13 @@
     }
 
     article {
+      &:first-of-type {
+        span {
+          font: {
+            size: $xl;
+          }
+        }
+      }
       &:last-of-type {
         img {
           width: 250px;
@@ -80,15 +87,18 @@
     box-shadow: none;
     width: 100%;
     flex-flow: column nowrap;
+
+    align-items: center;
     input {
       border-radius: $xxs;
+      height: $h;
 
       &[type="email"] {
-        width: 100%;
+        width: 90%;
         border: 2px solid $grey500;
       }
       &[type="submit"] {
-        width: 100%;
+        width: 90%;
         box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
       }
     }

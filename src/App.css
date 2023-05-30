@@ -163,7 +163,8 @@ footer {
     .hero article:first-of-type span {
       font-size: 30px;
       font-family: "Poppins Medium";
-      color: #5bb17d; }
+      color: #5bb17d;
+      margin-bottom: -18px; }
       .hero article:first-of-type span::first-letter {
         text-transform: capitalize; }
     .hero article:first-of-type p {
@@ -604,6 +605,8 @@ h3 {
     padding-top: 18px;
     padding-right: 18px;
     padding-left: 18px; }
+    .hero article:first-of-type span {
+      font-size: 20px; }
     .hero article:last-of-type img {
       width: 250px; }
 
@@ -611,14 +614,16 @@ h3 {
     row-gap: 16px;
     box-shadow: none;
     width: 100%;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    align-items: center; }
     .subscription input {
-      border-radius: 7px; }
+      border-radius: 7px;
+      height: 48px; }
       .subscription input[type="email"] {
-        width: 100%;
+        width: 90%;
         border: 2px solid #adb5bd; }
       .subscription input[type="submit"] {
-        width: 100%;
+        width: 90%;
         box-shadow: 0 0 18px 7px rgba(21, 144, 69, 0.2); }
 
   .desktopNav {
