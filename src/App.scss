@@ -458,7 +458,7 @@ footer {
         align: center;
         stop: always;
       }
-     
+
       h4 {
         color: $grey700;
         font: {
@@ -476,10 +476,7 @@ footer {
         }
       }
       p {
-        border-top: 2px solid $grey200;
-        padding: {
-          top: $m;
-        }
+        
         font: {
           size: $m;
         }
@@ -490,6 +487,8 @@ footer {
         text-transform: capitalize;
         margin-top: $l;
         color: $grey700;
+        border-bottom: 2px solid $grey200;
+        padding-bottom: $s;
       }
       ul {
         display: flex;
@@ -514,7 +513,6 @@ footer {
           }
         }
       }
-
     }
   }
 }

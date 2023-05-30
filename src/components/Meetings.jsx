@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
-import fraud from "../assets/img/meetings/fraud.webp";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export const Meetings = () => {
   const meetings = [
     {
-      img: fraud,
       alt: "alt text for image",
       title: "Scams",
       text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
@@ -36,7 +34,6 @@ export const Meetings = () => {
     },
 
     {
-      img: fraud,
       alt: "alt text for image",
       title: "Scams",
       text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
@@ -67,7 +64,6 @@ export const Meetings = () => {
     },
 
     {
-      img: fraud,
       alt: "alt text for image",
       title: "Scams",
       text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
@@ -98,7 +94,6 @@ export const Meetings = () => {
     },
 
     {
-      img: fraud,
       alt: "alt text for image",
       title: "Scams",
       text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
@@ -129,7 +124,6 @@ export const Meetings = () => {
     },
 
     {
-      img: fraud,
       alt: "alt text for image",
       title: "Scams",
       text: "We found out about some really useful ways to report scams.  This info has been helpfully passed on by Angela who attended Ferry Chats last week.  At the session, we were surprised that few people knew these ways of reporting scams. Thanks Angela",
@@ -182,7 +176,6 @@ export const Meetings = () => {
         {meetings.map((meeting) => {
           return (
             <article key={meeting.meetingDate}>
-              {/* <img src={meeting.img} alt={meeting.alt} loading="lazy" /> */}
               <h4>{meeting.title}</h4>
               <time dateTime={meeting.meetingDate}>
                 {" "}
