@@ -210,6 +210,9 @@
       width: 90vw;
       article {
         flex: 1 0 66%;
+        p{
+          max-width: 45ch;
+        }
       }
     }
   }

@@ -270,11 +270,12 @@
   }
 
   .meetings {
+    padding: $m;
     span {
       display: none;
     }
+    
     div {
-      padding: 0;
       width: 90vw;
       article {
         flex: 1 0 100%;

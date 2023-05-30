@@ -578,7 +578,9 @@ h3 {
     padding: 0;
     width: 90vw; }
     .meetings div article {
-      flex: 1 0 66%; } }
+      flex: 1 0 66%; }
+      .meetings div article p {
+        max-width: 45ch; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   #root {
     position: relative; }
@@ -749,12 +751,13 @@ h3 {
     .youth-gaff article:first-of-type img {
       width: 150px; }
 
-  .meetings span {
-    display: none; }
-  .meetings div {
-    padding: 0;
-    width: 90vw; }
-    .meetings div article {
-      flex: 1 0 100%; } }
+  .meetings {
+    padding: 16px; }
+    .meetings span {
+      display: none; }
+    .meetings div {
+      width: 90vw; }
+      .meetings div article {
+        flex: 1 0 100%; } }
 
 /*# sourceMappingURL=App.css.map */
