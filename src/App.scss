@@ -480,6 +480,7 @@ footer {
         font: {
           size: $m;
         }
+        max-width: 45ch;
       }
 
       h5 {
@@ -488,7 +489,7 @@ footer {
         margin-top: $l;
         color: $grey700;
         border-bottom: 2px solid $grey200;
-        padding-bottom: $s;
+        padding-bottom: $xxs;
       }
       ul {
         display: flex;

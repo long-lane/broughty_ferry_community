@@ -355,14 +355,15 @@ footer {
         flex: 1 0 100%;
         margin-top: -18px; }
       .meetings div article p {
-        font-size: 16px; }
+        font-size: 16px;
+        max-width: 45ch; }
       .meetings div article h5 {
         flex: 1 0 100%;
         text-transform: capitalize;
         margin-top: 18px;
         color: #495057;
         border-bottom: 2px solid #e9ecef;
-        padding-bottom: 14px; }
+        padding-bottom: 7px; }
       .meetings div article ul {
         display: flex;
         flex: 1 0 100%;
@@ -569,9 +570,7 @@ h3 {
     padding: 0;
     width: 90vw; }
     .meetings div article {
-      flex: 1 0 50%; }
-      .meetings div article p {
-        max-width: 45ch; } }
+      flex: 1 0 50%; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   #root {
     position: relative; }

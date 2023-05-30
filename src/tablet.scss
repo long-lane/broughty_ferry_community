@@ -169,11 +169,11 @@
   .ferry-chats,
   .youth-gaff {
     row-gap: $h;
-           padding: {
-          top: $xh;
-          right: $xh;
-          left: $xh;
-        }
+    padding: {
+      top: $xh;
+      right: $xh;
+      left: $xh;
+    }
     article {
       &:last-of-type {
         flex-flow: column nowrap;
@@ -196,7 +196,6 @@
           width: 250px;
         }
         background-size: 350px;
-
       }
     }
   }
@@ -210,10 +209,6 @@
       width: 90vw;
       article {
         flex: 1 0 50%;
-        
-        p{
-          max-width: 45ch;
-        }
       }
     }
   }
