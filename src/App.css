@@ -625,8 +625,7 @@ h3 {
         width: 90%;
         border: 2px solid #adb5bd; }
       .subscription input[type="submit"] {
-        width: 90%;
-        box-shadow: 0 0 18px 7px rgba(21, 144, 69, 0.2); }
+        width: 90%; }
 
   .desktopNav {
     display: none; }

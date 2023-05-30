@@ -87,8 +87,8 @@
     box-shadow: none;
     width: 100%;
     flex-flow: column nowrap;
-
     align-items: center;
+
     input {
       border-radius: $xxs;
       height: $h;
@@ -99,7 +99,6 @@
       }
       &[type="submit"] {
         width: 90%;
-        box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
       }
     }
   }
