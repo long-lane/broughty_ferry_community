@@ -349,7 +349,7 @@ footer {
         border-top-left-radius: 7px;
         border-top-right-radius: 7px; }
       .meetings div article h4 {
-        color: #5bb17d;
+        color: #495057;
         font-size: 30px; }
       .meetings div article time {
         font-size: 16px;
@@ -364,7 +364,7 @@ footer {
         flex: 1 0 100%;
         text-transform: capitalize;
         margin-top: 48px;
-        color: #f47a4e; }
+        color: #495057; }
       .meetings div article ul {
         display: flex;
         flex: 1 0 100%;

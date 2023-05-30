@@ -464,7 +464,7 @@ footer {
         }
       }
       h4 {
-        color: $green600;
+        color: $grey700;
         font: {
           size: $xxl;
         }
@@ -493,7 +493,7 @@ footer {
         flex: 1 0 100%;
         text-transform: capitalize;
         margin-top: $h;
-        color: $orange700;
+        color: $grey700;
       }
       ul {
         display: flex;
@@ -503,10 +503,9 @@ footer {
         list-style-type: none;
         line-height: $xl;
         padding: {
-          
           bottom: $h;
         }
-        
+
         li {
           a {
             text: {
