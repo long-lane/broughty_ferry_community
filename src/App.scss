@@ -225,6 +225,9 @@ footer {
         }
         max-width: 45ch;
       }
+      a {
+        align-self: flex-start;
+      }
     }
     &:last-of-type {
       justify-content: center;
@@ -237,51 +240,6 @@ footer {
       img {
         filter: brightness(1.4);
         width: 350px;
-      }
-    }
-  }
-}
-.subscription {
-  display: flex;
-  flex-flow: row wrap;
-  margin: {
-    top: $h;
-  }
-
-  justify-content: stretch;
-  width: calc(10 *#{$xh});
-  box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
-
-  input {
-    height: $xh;
-    font: {
-      family: "Poppins Light";
-      size: $l;
-    }
-    &[type="email"] {
-      width: 70%;
-      background-color: transparent;
-      border: 2px solid $grey500;
-      border-right: none;
-      border: {
-        top-left-radius: $xxs;
-        bottom-left-radius: $xxs;
-      }
-      padding: $m;
-    }
-    &[type="submit"] {
-      text-align: center;
-      cursor: pointer;
-      width: 30%;
-      border: 2px solid $green700;
-      background-color: $green700;
-      border: {
-        top-right-radius: $xxs;
-        bottom-right-radius: $xxs;
-      }
-      color: $grey100;
-      &:hover {
-        background-color: $green800;
       }
     }
   }
@@ -476,7 +434,6 @@ footer {
         }
       }
       p {
-        
         font: {
           size: $m;
         }
@@ -514,6 +471,46 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+.get-involved {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: {
+    top: $xh;
+    bottom: $xh;
+    right: $xh;
+    left: $xh;
+  }
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 550px;
+    row-gap: $s;
+
+    input {
+      border: none;
+      border-bottom: 2px solid $orange900;
+      background-color: transparent;
+      outline: none;
+      font: {
+        size: $xl;
+        family: "Poppins Medium";
+      }
+    }
+    textarea{
+      resize: none;
+      background-color: transparent;
+      border: 2px solid $orange900;
+      border-radius: $xxs;
+      padding: $m;
+    }
+    button{
+      align-self: flex-end;
+      cursor: pointer;
     }
   }
 }
@@ -580,7 +577,7 @@ h3 {
 .primaryBtn {
   background-color: $green700;
   color: $grey100;
-  box-shadow: 0 0 $l $xxs rgba($green900, 0.2);
+  margin-top: $h;
   &:hover {
     background-color: $green800;
   }

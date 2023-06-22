@@ -1,6 +1,6 @@
 import React from "react";
-import { subscribe } from "../helpers/SubscriptionHandler";
-import hero from '../assets/img/hero.png'
+import hero from "../assets/img/hero.png";
+import { NavLink } from "react-router-dom";
 export const Hero = () => {
   return (
     <section className="hero">
@@ -14,17 +14,11 @@ export const Hero = () => {
           we have opportunities for you to take part or volunteer within our
           projects and activities.
         </p>
-        <form
-          className="subscription"
-          onSubmit={(ev) => {
-            subscribe(ev, "123456");
-          }}>
-          <input type="email" placeholder='Your email address'/>
-          <input type="submit" value="Subscribe" />
-        </form>
+        <NavLink className='btn primaryBtn' to="/broughty_ferry_community/get-involved">get involved</NavLink>
+
       </article>
       <article>
-        <img src={hero} alt='' loading="lazy"/>
+        <img src={hero} alt="" loading="lazy" />
       </article>
     </section>
   );
