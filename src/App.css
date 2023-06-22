@@ -358,7 +358,7 @@ footer {
   padding-left: 60px; }
   .get-involved form {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     width: 550px;
     row-gap: 14px; }
     .get-involved form input {
@@ -751,5 +751,17 @@ h3 {
       .meetings div article {
         padding: 16px;
         flex: 1 0 100%; } }
+.get-involved {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 14px;
+  padding-left: 14px;
+  row-gap: 18px; }
+  .get-involved form {
+    width: 90vw; }
+    .get-involved form button {
+      align-self: center;
+      cursor: pointer;
+      margin-top: 14px; }
 
 /*# sourceMappingURL=App.css.map */

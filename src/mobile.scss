@@ -284,3 +284,22 @@
     }
   }
 }
+
+.get-involved {
+  padding: {
+    top: $l;
+    bottom:$l;
+    right: $s;
+    left: $s;
+  }
+  row-gap: $l;
+  form {
+    
+    width: 90vw;
+    button{
+      align-self: center;
+      cursor: pointer;
+      margin-top: $s;
+    }
+  }
+}
