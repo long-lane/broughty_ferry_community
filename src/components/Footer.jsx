@@ -53,6 +53,7 @@ export const Footer = () => {
       <article></article>
       <article></article>
       <article>
+        <h2>feedback</h2>
         <form onSubmit={submitForm}>
           <textarea
             name="message"
