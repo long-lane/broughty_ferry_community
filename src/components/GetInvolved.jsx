@@ -33,7 +33,7 @@ export const GetInvolved = () => {
           <input type="text" name="name" placeholder="Name" />
           <input type="email" name="email" placeholder="Email" />
           <textarea name="message" rows={10} placeholder="Say 'Hi' 🤗"></textarea>
-          <button type="submit" className="btn secondaryBtn">Submit Form</button>
+          <button type="submit" className="btn secondaryBtn">Send</button>
         </form>
       </article>
     </section>
