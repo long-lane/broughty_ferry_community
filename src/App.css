@@ -360,7 +360,7 @@ footer {
     display: flex;
     flex-flow: column wrap;
     max-width: 550px;
-    row-gap: 14px; }
+    row-gap: 30px; }
     .get-involved form input {
       border: none;
       border-bottom: 2px solid #f15922;
