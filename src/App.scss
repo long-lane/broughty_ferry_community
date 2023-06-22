@@ -487,8 +487,8 @@ footer {
   }
   form {
     display: flex;
-    flex-flow: column nowrap;
-    width: 550px;
+    flex-flow: column wrap;
+    max-width: 550px;
     row-gap: $s;
 
     input {
@@ -510,7 +510,7 @@ footer {
     }
     button{
       align-self: flex-end;
-      cursor: pointer;
+      cursor: pointer
     }
   }
 }

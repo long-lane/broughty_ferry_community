@@ -294,12 +294,14 @@
   }
   row-gap: $l;
   form {
-    
+    flex-flow: column nowrap;
+
     width: 90vw;
     button{
       align-self: center;
       cursor: pointer;
       margin-top: $s;
+      background-color: transparent;
     }
   }
 }

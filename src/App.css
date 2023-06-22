@@ -358,8 +358,8 @@ footer {
   padding-left: 60px; }
   .get-involved form {
     display: flex;
-    flex-flow: column nowrap;
-    width: 550px;
+    flex-flow: column wrap;
+    max-width: 550px;
     row-gap: 14px; }
     .get-involved form input {
       border: none;
@@ -758,10 +758,12 @@ h3 {
   padding-left: 14px;
   row-gap: 18px; }
   .get-involved form {
+    flex-flow: column nowrap;
     width: 90vw; }
     .get-involved form button {
       align-self: center;
       cursor: pointer;
-      margin-top: 14px; }
+      margin-top: 14px;
+      background-color: transparent; }
 
 /*# sourceMappingURL=App.css.map */
