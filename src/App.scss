@@ -87,11 +87,34 @@ footer {
         }
       }
     }
+
     &:last-of-type {
       flex: 1 1 100%;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+
+      form {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+        padding: {
+          bottom: $h;
+        }
+
+        textarea {
+          resize: none;
+          background-color: $orange100;
+          border: 2px solid $orange100;
+          border-radius: $xxs;
+          padding: $m;
+        }
+        button {
+          align-self: flex-end;
+          cursor: pointer;
+          background-color: $orange100;
+        }
+      }
       p {
         text-align: center;
         width: 60ch;

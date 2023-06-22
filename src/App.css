@@ -98,6 +98,21 @@ footer {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end; }
+      footer article:last-of-type form {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+        padding-bottom: 48px; }
+        footer article:last-of-type form textarea {
+          resize: none;
+          background-color: #feeee9;
+          border: 2px solid #feeee9;
+          border-radius: 7px;
+          padding: 16px; }
+        footer article:last-of-type form button {
+          align-self: flex-end;
+          cursor: pointer;
+          background-color: #feeee9; }
       footer article:last-of-type p {
         text-align: center;
         width: 60ch;
@@ -463,6 +478,8 @@ h3 {
       row-gap: 20px; }
       footer article:last-of-type {
         justify-content: center; }
+        footer article:last-of-type form {
+          width: 100%; }
 
   .hero {
     row-gap: 60px; }
@@ -610,6 +627,8 @@ h3 {
         flex-flow: 0 0 100%; }
     footer article:last-of-type {
       justify-content: center; }
+      footer article:last-of-type form {
+        width: 100%; }
       footer article:last-of-type p {
         width: auto; }
 

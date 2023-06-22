@@ -22,6 +22,9 @@
     article {
       row-gap: $xl;
       &:last-of-type {
+        form {
+          width: 100%;
+        }
         justify-content: center;
         p {
           // border-top: none;
