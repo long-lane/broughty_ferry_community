@@ -626,7 +626,7 @@ h3 {
         font-size: 16px;
         flex-flow: 0 0 100%; }
     footer article:last-of-type {
-      justify-content: center; }
+      align-items: flex-start; }
       footer article:last-of-type form {
         width: 100%; }
       footer article:last-of-type p {
