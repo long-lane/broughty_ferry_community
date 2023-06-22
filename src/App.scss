@@ -487,7 +487,7 @@ footer {
   }
   form {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: flex-end;
     max-width: 550px;
     row-gap: $xxl;
 
@@ -501,17 +501,28 @@ footer {
         family: "Poppins Medium";
       }
     }
-    textarea{
+    textarea {
       resize: none;
       background-color: transparent;
       border: 2px solid $orange900;
       border-radius: $xxs;
       padding: $m;
+      font: {
+        size: $m;
+        family: "Poppins Medium";
+      }
     }
-    button{
-      align-self: flex-end;
-      cursor: pointer
-    }
+  }
+}
+.news {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: {
+    top: $xh;
+    bottom: $xh;
+    right: $xh;
+    left: $xh;
   }
 }
 h1 {

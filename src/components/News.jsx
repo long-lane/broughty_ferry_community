@@ -2,8 +2,11 @@ import React from "react";
 
 export const News = () => {
   return (
-    <section id="news">
-      <h2>news</h2>
+    <section className="news" id="news">
+      <article>
+        <h2>news</h2>
+      </article>
+      <article></article>
     </section>
   );
 };

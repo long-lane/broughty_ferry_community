@@ -358,7 +358,7 @@ footer {
   padding-left: 60px; }
   .get-involved form {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: flex-end;
     max-width: 550px;
     row-gap: 30px; }
     .get-involved form input {
@@ -373,10 +373,18 @@ footer {
       background-color: transparent;
       border: 2px solid #f15922;
       border-radius: 7px;
-      padding: 16px; }
-    .get-involved form button {
-      align-self: flex-end;
-      cursor: pointer; }
+      padding: 16px;
+      font-size: 16px;
+      font-family: "Poppins Medium"; }
+
+.news {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+  padding-left: 60px; }
 
 h1 {
   font-size: 48px;
